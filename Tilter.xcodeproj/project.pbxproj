@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FF4D44C1FBB556D0081C524 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5FF4D44B1FBB556D0081C524 /* MyScene.sks */; };
 		CE8212CE1FBB36E800AED4EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8212CD1FBB36E800AED4EE /* main.m */; };
 		CE8212D11FBB36E800AED4EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8212D01FBB36E800AED4EE /* AppDelegate.m */; };
 		CE8212D41FBB36E800AED4EE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8212D31FBB36E800AED4EE /* FirstViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FF4D44B1FBB556D0081C524 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyScene.sks; sourceTree = "<group>"; };
 		CE8212C91FBB36E800AED4EE /* Tilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8212CD1FBB36E800AED4EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE8212CF1FBB36E800AED4EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				CE8212D51FBB36E800AED4EE /* SecondViewController.h */,
 				CE8212D61FBB36E800AED4EE /* SecondViewController.m */,
 				CE8212D81FBB36E800AED4EE /* Main.storyboard */,
+				5FF4D44B1FBB556D0081C524 /* MyScene.sks */,
 				CE8212DB1FBB36E800AED4EE /* Assets.xcassets */,
 				CE8212DD1FBB36E800AED4EE /* LaunchScreen.storyboard */,
 				CE8212E01FBB36E800AED4EE /* Info.plist */,
@@ -227,7 +230,7 @@
 				};
 			};
 			buildConfigurationList = CE8212C41FBB36E700AED4EE /* Build configuration list for PBXProject "Tilter" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -253,6 +256,7 @@
 			files = (
 				CE8212DF1FBB36E800AED4EE /* LaunchScreen.storyboard in Resources */,
 				CE8212DC1FBB36E800AED4EE /* Assets.xcassets in Resources */,
+				5FF4D44C1FBB556D0081C524 /* MyScene.sks in Resources */,
 				CE8212DA1FBB36E800AED4EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VVV5M9R6C4;
 				INFOPLIST_FILE = Tilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.leeds.Tilter;
@@ -439,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VVV5M9R6C4;
 				INFOPLIST_FILE = Tilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.leeds.Tilter;
@@ -511,6 +517,7 @@
 				CE8212FB1FBB36E800AED4EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE8212FC1FBB36E800AED4EE /* Build configuration list for PBXNativeTarget "TilterTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +526,7 @@
 				CE8212FE1FBB36E800AED4EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE8212FF1FBB36E800AED4EE /* Build configuration list for PBXNativeTarget "TilterUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +535,7 @@
 				CE8213011FBB36E800AED4EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
