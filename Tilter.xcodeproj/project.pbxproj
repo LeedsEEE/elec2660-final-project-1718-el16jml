@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F1C1CA61FC1FBEF00681BB2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C1CA51FC1FBEF00681BB2 /* GameScene.sks */; };
 		5FA88C3D1FC1DB8D0004D272 /* Maze.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88C3C1FC1DB8D0004D272 /* Maze.m */; };
 		5FA88C401FC1DD0A0004D272 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA88C3F1FC1DD060004D272 /* GameplayKit.framework */; };
 		5FA88C421FC1DD220004D272 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA88C411FC1DD1F0004D272 /* CoreMotion.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F1C1CA51FC1FBEF00681BB2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		5FA88C3B1FC1DB8D0004D272 /* Maze.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maze.h; sourceTree = "<group>"; };
 		5FA88C3C1FC1DB8D0004D272 /* Maze.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Maze.m; sourceTree = "<group>"; };
 		5FA88C3F1FC1DD060004D272 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
@@ -131,9 +133,10 @@
 				CE8212D31FBB36E800AED4EE /* FirstViewController.m */,
 				CE8212D51FBB36E800AED4EE /* SecondViewController.h */,
 				CE8212D61FBB36E800AED4EE /* SecondViewController.m */,
+				5F1C1CA51FC1FBEF00681BB2 /* GameScene.sks */,
 				CE8212D81FBB36E800AED4EE /* Main.storyboard */,
-				CE8212DB1FBB36E800AED4EE /* Assets.xcassets */,
 				CE8212DD1FBB36E800AED4EE /* LaunchScreen.storyboard */,
+				CE8212DB1FBB36E800AED4EE /* Assets.xcassets */,
 				CE8212E01FBB36E800AED4EE /* Info.plist */,
 				CE8212CC1FBB36E800AED4EE /* Supporting Files */,
 			);
@@ -272,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1C1CA61FC1FBEF00681BB2 /* GameScene.sks in Resources */,
 				CE8212DF1FBB36E800AED4EE /* LaunchScreen.storyboard in Resources */,
 				CE8212DC1FBB36E800AED4EE /* Assets.xcassets in Resources */,
 				CE8212DA1FBB36E800AED4EE /* Main.storyboard in Resources */,
