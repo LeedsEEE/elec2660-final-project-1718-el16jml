@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FF4D44C1FBB556D0081C524 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5FF4D44B1FBB556D0081C524 /* MyScene.sks */; };
+		5FA88C3D1FC1DB8D0004D272 /* Maze.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88C3C1FC1DB8D0004D272 /* Maze.m */; };
+		5FA88C401FC1DD0A0004D272 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA88C3F1FC1DD060004D272 /* GameplayKit.framework */; };
+		5FA88C421FC1DD220004D272 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA88C411FC1DD1F0004D272 /* CoreMotion.framework */; };
 		CE8212CE1FBB36E800AED4EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8212CD1FBB36E800AED4EE /* main.m */; };
 		CE8212D11FBB36E800AED4EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8212D01FBB36E800AED4EE /* AppDelegate.m */; };
 		CE8212D41FBB36E800AED4EE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8212D31FBB36E800AED4EE /* FirstViewController.m */; };
@@ -37,7 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5FF4D44B1FBB556D0081C524 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyScene.sks; sourceTree = "<group>"; };
+		5FA88C3B1FC1DB8D0004D272 /* Maze.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maze.h; sourceTree = "<group>"; };
+		5FA88C3C1FC1DB8D0004D272 /* Maze.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Maze.m; sourceTree = "<group>"; };
+		5FA88C3F1FC1DD060004D272 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
+		5FA88C411FC1DD1F0004D272 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		CE8212C91FBB36E800AED4EE /* Tilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8212CD1FBB36E800AED4EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE8212CF1FBB36E800AED4EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA88C401FC1DD0A0004D272 /* GameplayKit.framework in Frameworks */,
+				5FA88C421FC1DD220004D272 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FA88C3E1FC1DD060004D272 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FA88C411FC1DD1F0004D272 /* CoreMotion.framework */,
+				5FA88C3F1FC1DD060004D272 /* GameplayKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE8212C01FBB36E700AED4EE = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +106,7 @@
 				CE8212E81FBB36E800AED4EE /* TilterTests */,
 				CE8212F31FBB36E800AED4EE /* TilterUITests */,
 				CE8212CA1FBB36E800AED4EE /* Products */,
+				5FA88C3E1FC1DD060004D272 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,12 +125,13 @@
 			children = (
 				CE8212CF1FBB36E800AED4EE /* AppDelegate.h */,
 				CE8212D01FBB36E800AED4EE /* AppDelegate.m */,
+				5FA88C3B1FC1DB8D0004D272 /* Maze.h */,
+				5FA88C3C1FC1DB8D0004D272 /* Maze.m */,
 				CE8212D21FBB36E800AED4EE /* FirstViewController.h */,
 				CE8212D31FBB36E800AED4EE /* FirstViewController.m */,
 				CE8212D51FBB36E800AED4EE /* SecondViewController.h */,
 				CE8212D61FBB36E800AED4EE /* SecondViewController.m */,
 				CE8212D81FBB36E800AED4EE /* Main.storyboard */,
-				5FF4D44B1FBB556D0081C524 /* MyScene.sks */,
 				CE8212DB1FBB36E800AED4EE /* Assets.xcassets */,
 				CE8212DD1FBB36E800AED4EE /* LaunchScreen.storyboard */,
 				CE8212E01FBB36E800AED4EE /* Info.plist */,
@@ -256,7 +274,6 @@
 			files = (
 				CE8212DF1FBB36E800AED4EE /* LaunchScreen.storyboard in Resources */,
 				CE8212DC1FBB36E800AED4EE /* Assets.xcassets in Resources */,
-				5FF4D44C1FBB556D0081C524 /* MyScene.sks in Resources */,
 				CE8212DA1FBB36E800AED4EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA88C3D1FC1DB8D0004D272 /* Maze.m in Sources */,
 				CE8212D71FBB36E800AED4EE /* SecondViewController.m in Sources */,
 				CE8212D11FBB36E800AED4EE /* AppDelegate.m in Sources */,
 				CE8212D41FBB36E800AED4EE /* FirstViewController.m in Sources */,
