@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.levelLabel.text = self.currentLevel.level;
+    self.difficultyLabel.text = self.currentLevel.difficulty;
 }
 
 

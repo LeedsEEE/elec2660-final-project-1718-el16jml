@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Levels.h"
 
 @interface FirstViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
+@property (weak, nonatomic) IBOutlet UILabel *difficultyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+
+@property (nonatomic, strong) Levels *currentLevel;
 
 @end
 

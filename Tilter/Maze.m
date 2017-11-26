@@ -39,8 +39,6 @@
         
         
         
-        
-        
         //find the solution to the maze generated
         
         self.solution = [self.graph findPathFromNode:self.startNode toNode:self.endNode];
