@@ -169,8 +169,6 @@
 			children = (
 				5F1C1D511FCAFB9A00681BB2 /* Pre Set Levels */,
 				5F1C1D501FCAFB8E00681BB2 /* Random Levels */,
-				CE8212CF1FBB36E800AED4EE /* AppDelegate.h */,
-				CE8212D01FBB36E800AED4EE /* AppDelegate.m */,
 				5FA88C3B1FC1DB8D0004D272 /* Maze.h */,
 				5FA88C3C1FC1DB8D0004D272 /* Maze.m */,
 				5F1C1CA51FC1FBEF00681BB2 /* GameScene.sks */,
@@ -178,6 +176,8 @@
 				CE8212DD1FBB36E800AED4EE /* LaunchScreen.storyboard */,
 				CE8212DB1FBB36E800AED4EE /* Assets.xcassets */,
 				CE8212E01FBB36E800AED4EE /* Info.plist */,
+				CE8212CF1FBB36E800AED4EE /* AppDelegate.h */,
+				CE8212D01FBB36E800AED4EE /* AppDelegate.m */,
 				CE8212CC1FBB36E800AED4EE /* Supporting Files */,
 			);
 			path = Tilter;
