@@ -13,5 +13,7 @@
 @property (nonatomic, strong) NSString *difficulty;
 @property (nonatomic, strong) NSString *level;
 @property float bestTime;
+@property int size;
+@property (nonatomic, strong) NSMutableArray* Maze;
 
 @end

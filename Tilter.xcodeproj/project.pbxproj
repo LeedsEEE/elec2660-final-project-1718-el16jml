@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5F1C1CA61FC1FBEF00681BB2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C1CA51FC1FBEF00681BB2 /* GameScene.sks */; };
-		5F1C1D471FC87F4600681BB2 /* MazeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D461FC87F4600681BB2 /* MazeGenerator.m */; };
 		5F1C1D491FC8CB4F00681BB2 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1C1D481FC8CB4A00681BB2 /* GameKit.framework */; };
 		5F1C1D4C1FCAF7A700681BB2 /* Levels.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D4B1FCAF7A700681BB2 /* Levels.m */; };
 		5F1C1D4F1FCAF8C500681BB2 /* preSetLevels.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D4E1FCAF8C500681BB2 /* preSetLevels.m */; };
 		5F1C1D541FCAFD2200681BB2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D531FCAFD2200681BB2 /* TableViewController.m */; };
-		5FA88C3D1FC1DB8D0004D272 /* Maze.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA88C3C1FC1DB8D0004D272 /* Maze.m */; };
+		5F1C1D571FCDA9E100681BB2 /* MazeArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D561FCDA9E000681BB2 /* MazeArrays.m */; };
+		5F1C1D5A1FCDB62900681BB2 /* SetLevelGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D591FCDB62900681BB2 /* SetLevelGameViewController.m */; };
+		5F1C1D5D1FCDB91B00681BB2 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D5C1FCDB91B00681BB2 /* GameScene.m */; };
 		5FA88C401FC1DD0A0004D272 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA88C3F1FC1DD060004D272 /* GameplayKit.framework */; };
 		5FA88C421FC1DD220004D272 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA88C411FC1DD1F0004D272 /* CoreMotion.framework */; };
 		CE8212CE1FBB36E800AED4EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8212CD1FBB36E800AED4EE /* main.m */; };
 		CE8212D11FBB36E800AED4EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8212D01FBB36E800AED4EE /* AppDelegate.m */; };
 		CE8212D41FBB36E800AED4EE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8212D31FBB36E800AED4EE /* FirstViewController.m */; };
-		CE8212D71FBB36E800AED4EE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8212D61FBB36E800AED4EE /* SecondViewController.m */; };
 		CE8212DA1FBB36E800AED4EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8212D81FBB36E800AED4EE /* Main.storyboard */; };
 		CE8212DC1FBB36E800AED4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8212DB1FBB36E800AED4EE /* Assets.xcassets */; };
 		CE8212DF1FBB36E800AED4EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8212DD1FBB36E800AED4EE /* LaunchScreen.storyboard */; };
@@ -46,8 +46,6 @@
 
 /* Begin PBXFileReference section */
 		5F1C1CA51FC1FBEF00681BB2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		5F1C1D451FC87F4600681BB2 /* MazeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MazeGenerator.h; sourceTree = "<group>"; };
-		5F1C1D461FC87F4600681BB2 /* MazeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MazeGenerator.m; sourceTree = "<group>"; };
 		5F1C1D481FC8CB4A00681BB2 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		5F1C1D4A1FCAF7A700681BB2 /* Levels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Levels.h; sourceTree = "<group>"; };
 		5F1C1D4B1FCAF7A700681BB2 /* Levels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Levels.m; sourceTree = "<group>"; };
@@ -55,8 +53,12 @@
 		5F1C1D4E1FCAF8C500681BB2 /* preSetLevels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = preSetLevels.m; sourceTree = "<group>"; };
 		5F1C1D521FCAFD2200681BB2 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		5F1C1D531FCAFD2200681BB2 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		5FA88C3B1FC1DB8D0004D272 /* Maze.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maze.h; sourceTree = "<group>"; };
-		5FA88C3C1FC1DB8D0004D272 /* Maze.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Maze.m; sourceTree = "<group>"; };
+		5F1C1D551FCDA9E000681BB2 /* MazeArrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MazeArrays.h; sourceTree = "<group>"; };
+		5F1C1D561FCDA9E000681BB2 /* MazeArrays.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MazeArrays.m; sourceTree = "<group>"; };
+		5F1C1D581FCDB62900681BB2 /* SetLevelGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetLevelGameViewController.h; sourceTree = "<group>"; };
+		5F1C1D591FCDB62900681BB2 /* SetLevelGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetLevelGameViewController.m; sourceTree = "<group>"; };
+		5F1C1D5B1FCDB91B00681BB2 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		5F1C1D5C1FCDB91B00681BB2 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		5FA88C3F1FC1DD060004D272 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
 		5FA88C411FC1DD1F0004D272 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		CE8212C91FBB36E800AED4EE /* Tilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +67,6 @@
 		CE8212D01FBB36E800AED4EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE8212D21FBB36E800AED4EE /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		CE8212D31FBB36E800AED4EE /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		CE8212D51FBB36E800AED4EE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		CE8212D61FBB36E800AED4EE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		CE8212D91FBB36E800AED4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE8212DB1FBB36E800AED4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8212DE1FBB36E800AED4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,28 +107,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F1C1D501FCAFB8E00681BB2 /* Random Levels */ = {
-			isa = PBXGroup;
-			children = (
-				5F1C1D451FC87F4600681BB2 /* MazeGenerator.h */,
-				5F1C1D461FC87F4600681BB2 /* MazeGenerator.m */,
-				CE8212D51FBB36E800AED4EE /* SecondViewController.h */,
-				CE8212D61FBB36E800AED4EE /* SecondViewController.m */,
-			);
-			path = "Random Levels";
-			sourceTree = "<group>";
-		};
 		5F1C1D511FCAFB9A00681BB2 /* Pre Set Levels */ = {
 			isa = PBXGroup;
 			children = (
+				5F1C1D551FCDA9E000681BB2 /* MazeArrays.h */,
+				5F1C1D561FCDA9E000681BB2 /* MazeArrays.m */,
 				5F1C1D4A1FCAF7A700681BB2 /* Levels.h */,
 				5F1C1D4B1FCAF7A700681BB2 /* Levels.m */,
 				5F1C1D4D1FCAF8C500681BB2 /* preSetLevels.h */,
 				5F1C1D4E1FCAF8C500681BB2 /* preSetLevels.m */,
+				5F1C1D5B1FCDB91B00681BB2 /* GameScene.h */,
+				5F1C1D5C1FCDB91B00681BB2 /* GameScene.m */,
+				5F1C1CA51FC1FBEF00681BB2 /* GameScene.sks */,
 				CE8212D21FBB36E800AED4EE /* FirstViewController.h */,
 				CE8212D31FBB36E800AED4EE /* FirstViewController.m */,
 				5F1C1D521FCAFD2200681BB2 /* TableViewController.h */,
 				5F1C1D531FCAFD2200681BB2 /* TableViewController.m */,
+				5F1C1D581FCDB62900681BB2 /* SetLevelGameViewController.h */,
+				5F1C1D591FCDB62900681BB2 /* SetLevelGameViewController.m */,
 			);
 			name = "Pre Set Levels";
 			sourceTree = "<group>";
@@ -168,10 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				5F1C1D511FCAFB9A00681BB2 /* Pre Set Levels */,
-				5F1C1D501FCAFB8E00681BB2 /* Random Levels */,
-				5FA88C3B1FC1DB8D0004D272 /* Maze.h */,
-				5FA88C3C1FC1DB8D0004D272 /* Maze.m */,
-				5F1C1CA51FC1FBEF00681BB2 /* GameScene.sks */,
 				CE8212D81FBB36E800AED4EE /* Main.storyboard */,
 				CE8212DD1FBB36E800AED4EE /* LaunchScreen.storyboard */,
 				CE8212DB1FBB36E800AED4EE /* Assets.xcassets */,
@@ -343,14 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FA88C3D1FC1DB8D0004D272 /* Maze.m in Sources */,
-				CE8212D71FBB36E800AED4EE /* SecondViewController.m in Sources */,
-				5F1C1D471FC87F4600681BB2 /* MazeGenerator.m in Sources */,
 				5F1C1D4C1FCAF7A700681BB2 /* Levels.m in Sources */,
+				5F1C1D5A1FCDB62900681BB2 /* SetLevelGameViewController.m in Sources */,
 				5F1C1D541FCAFD2200681BB2 /* TableViewController.m in Sources */,
 				CE8212D11FBB36E800AED4EE /* AppDelegate.m in Sources */,
 				CE8212D41FBB36E800AED4EE /* FirstViewController.m in Sources */,
 				CE8212CE1FBB36E800AED4EE /* main.m in Sources */,
+				5F1C1D571FCDA9E100681BB2 /* MazeArrays.m in Sources */,
+				5F1C1D5D1FCDB91B00681BB2 /* GameScene.m in Sources */,
 				5F1C1D4F1FCAF8C500681BB2 /* preSetLevels.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

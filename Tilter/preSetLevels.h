@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Levels.h"
+#import "MazeArrays.h"
 
 @interface preSetLevels : NSObject
 

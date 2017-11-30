@@ -18,8 +18,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    NSLog(@"Segue complete");
+    
     self.levelLabel.text = self.currentLevel.level;
     self.difficultyLabel.text = self.currentLevel.difficulty;
+    self.puzzleSize = self.currentLevel.size;
+    
+    NSLog(@"Current Level Size: %d", self.puzzleSize);
+    
+    NSLog(@"Properties assigned to view");
 }
 
 

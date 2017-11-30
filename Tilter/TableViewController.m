@@ -127,21 +127,25 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         if (indexPath.section == 0){
-            
             Levels *tempLevel = [self.levels.easyLevels objectAtIndex: indexPath.row];
             destinationViewController.currentLevel = tempLevel;
-            
+            self.mazeSize = 19;
+            //self.maze = tempLevel.Maze;
         }
         else if (indexPath.section == 1){
-            
             Levels *tempLevel = [self.levels.mediumLevels objectAtIndex: indexPath.row];
             destinationViewController.currentLevel = tempLevel;
+            self.mazeSize = 29;
+            self.maze = tempLevel.Maze;
         }
         else if (indexPath.section == 2){
-            
             Levels *tempLevel = [self.levels.hardLevels objectAtIndex: indexPath.row];
             destinationViewController.currentLevel = tempLevel;
+            self.mazeSize = 39;
+            self.maze = tempLevel.Maze;
         }
+        
+        NSLog(@"Starting segue");
     }
 }
 

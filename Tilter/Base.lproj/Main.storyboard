@@ -75,6 +75,7 @@
                     <connections>
                         <outlet property="difficultyLabel" destination="ONJ-UR-vtn" id="mOB-gb-1H0"/>
                         <outlet property="levelLabel" destination="Vhl-gJ-K0C" id="PlD-ie-cux"/>
+                        <outlet property="mazeView" destination="EhG-0Y-riH" id="rRM-jo-DFj"/>
                         <outlet property="timeLabel" destination="6Dy-Jj-fj9" id="SU1-Ti-DMS"/>
                     </connections>
                 </viewController>
