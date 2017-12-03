@@ -5,6 +5,7 @@
 //  Created by Julian Lee on 28/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
+//  Takes an object from the tableViewController and sends it to the gameScene. Also takes the scene from gameScene and assigns it to the view by setting the aspect ratio and then actually presenting it.
 
 #import "SetLevelGameViewController.h"
 

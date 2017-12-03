@@ -55,4 +55,36 @@
 @property (nonatomic, strong) NSArray* LevelTwoColumnEighteen;
 @property (nonatomic, strong) NSArray* LevelTwoColumnNineteen;
 
+@property (nonatomic, strong) NSArray* LevelThree;
+@property (nonatomic, strong) NSArray* LevelThreeColumnOne;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwo;
+@property (nonatomic, strong) NSArray* LevelThreeColumnThree;
+@property (nonatomic, strong) NSArray* LevelThreeColumnFour;
+@property (nonatomic, strong) NSArray* LevelThreeColumnFive;
+@property (nonatomic, strong) NSArray* LevelThreeColumnSix;
+@property (nonatomic, strong) NSArray* LevelThreeColumnSeven;
+@property (nonatomic, strong) NSArray* LevelThreeColumnEight;
+@property (nonatomic, strong) NSArray* LevelThreeColumnNine;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTen;
+@property (nonatomic, strong) NSArray* LevelThreeColumnEleven;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwelve;
+@property (nonatomic, strong) NSArray* LevelThreeColumnThirteen;
+@property (nonatomic, strong) NSArray* LevelThreeColumnFourteen;
+@property (nonatomic, strong) NSArray* LevelThreeColumnFifteen;
+@property (nonatomic, strong) NSArray* LevelThreeColumnSixteen;
+@property (nonatomic, strong) NSArray* LevelThreeColumnSeventeen;
+@property (nonatomic, strong) NSArray* LevelThreeColumnEighteen;
+@property (nonatomic, strong) NSArray* LevelThreeColumnNineteen;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwenty;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwentyOne;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwentyTwo;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwentyThree;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwentyFour;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwentyFive;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwentySix;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwentySeven;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwentyEight;
+@property (nonatomic, strong) NSArray* LevelThreeColumnTwentyNine;
+
+
 @end

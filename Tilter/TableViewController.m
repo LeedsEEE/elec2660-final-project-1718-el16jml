@@ -38,6 +38,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    //  three sections for three different difficulties
     if (section == 0){
         NSInteger rows = self.levels.easyLevels.count;
         return rows;
@@ -58,6 +59,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Level" forIndexPath:indexPath];
     
+    //  each section contains the same number of levels that there are of that difficulty e.g. if there are two easy levels, the easy section will contain three rows.
     if (indexPath.section == 0){
         Levels *tempLevel = [self.levels.easyLevels objectAtIndex:indexPath.row];
         cell.textLabel.text = tempLevel.level;
@@ -126,18 +128,22 @@
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
+        
+        //  easy levels
         if (indexPath.section == 0){
             
             Levels *tempLevel = [self.levels.easyLevels objectAtIndex: indexPath.row];
             destinationViewController.currentLevel = tempLevel;
             
         }
+        //  medium levels
         else if (indexPath.section == 1){
             
             Levels *tempLevel = [self.levels.mediumLevels objectAtIndex: indexPath.row];
             destinationViewController.currentLevel = tempLevel;
             
         }
+        //  hard levels
         else if (indexPath.section == 2){
             
             Levels *tempLevel = [self.levels.hardLevels objectAtIndex: indexPath.row];

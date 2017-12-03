@@ -5,6 +5,8 @@
 //  Created by Julian Lee on 28/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
+//  Takes the current level object from the view controller and displays the level number, difficulty and the maze itself.
+
 
 #import "GameScene.h"
 
@@ -46,10 +48,10 @@
     
     //  cycle through the matrix indicies and create a node at the corresponding position if there is a one at that index
     for (int x = 0; x < self.mazeSize; x++){
-        //NSLog(@"Change of X coordinate");
+        //  NSLog(@"Change of X coordinate");
         for (int y = 0; y < self.mazeSize; y++){
-            //NSLog(@"Change of Y coordinate");
-            //NSLog(@"Current node: x: %i y: %i", x, y);
+            //  NSLog(@"Change of Y coordinate");
+            //  NSLog(@"Current node: x: %i y: %i", x, y);
             if ([self.maze[x][y]  isEqual: @0]){
                 NSLog(@"If statement passed");
                 SKShapeNode *currentNode = [node copy];

@@ -113,13 +113,13 @@
 				5F1C1D4B1FCAF7A700681BB2 /* Levels.m */,
 				5F1C1D4D1FCAF8C500681BB2 /* preSetLevels.h */,
 				5F1C1D4E1FCAF8C500681BB2 /* preSetLevels.m */,
-				5F1C1D5B1FCDB91B00681BB2 /* GameScene.h */,
-				5F1C1D5C1FCDB91B00681BB2 /* GameScene.m */,
-				5F1C1CA51FC1FBEF00681BB2 /* GameScene.sks */,
 				5F1C1D521FCAFD2200681BB2 /* TableViewController.h */,
 				5F1C1D531FCAFD2200681BB2 /* TableViewController.m */,
 				5F1C1D581FCDB62900681BB2 /* SetLevelGameViewController.h */,
 				5F1C1D591FCDB62900681BB2 /* SetLevelGameViewController.m */,
+				5F1C1D5B1FCDB91B00681BB2 /* GameScene.h */,
+				5F1C1D5C1FCDB91B00681BB2 /* GameScene.m */,
+				5F1C1CA51FC1FBEF00681BB2 /* GameScene.sks */,
 			);
 			name = "Pre Set Levels";
 			sourceTree = "<group>";

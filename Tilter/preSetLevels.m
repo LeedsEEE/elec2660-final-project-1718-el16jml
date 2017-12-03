@@ -5,6 +5,7 @@
 //  Created by Julian Lee on 26/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
+//  Creates al of the level objects, assigning level names, difficulties and sizes to each. Each obkect is also give a maze array from "MazeArrays"
 
 #import "preSetLevels.h"
 
@@ -41,6 +42,7 @@
         levelThree.level = @"Level Three";
         levelThree.difficulty = @"Medium";
         levelThree.size = 29;
+        levelThree.Maze = [NSMutableArray arrayWithArray:setLevels.LevelThree];
         
         self.mediumLevels = [NSMutableArray array];
         Levels *levelFour = [[Levels alloc] init];
@@ -63,7 +65,7 @@
         Levels *levelSix = [[Levels alloc] init];
         levelSix.level = @"Level Six";
         levelSix.difficulty = @"Hard";
-        levelFive.size = 39;
+        levelSix.size = 39;
         
         [self.hardLevels addObject:levelFive];
         [self.hardLevels addObject:levelSix];
