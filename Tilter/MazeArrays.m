@@ -15,28 +15,25 @@
     self = [super init];
     if (self) {
         
-        self.one = [NSNumber numberWithInt:1];
-        self.zero = [NSNumber numberWithInt:0];
-        
-        self.LevelOneColumnOne =        [NSArray arrayWithObjects:_one, _zero, _one, _one, _one, _one, _one, _zero,  _one, _one, _one, _one, _one, _zero, _one, _zero, _one, _one, _one, nil];
-        self.LevelOneColumnTwo =        [NSArray arrayWithObjects:_one, _zero, _one, _zero, _zero, _zero, _one, _zero, _one, _zero, _one, _zero, _one, _zero, _one, _zero, _zero, nil];
-        self.LevelOneColumnThree =      [NSArray arrayWithObjects:_one, _zero, _one, _one, _one, _zero, _one, _one, _one, _zero, _one, _zero, _one, _one, _one, _zero, _one, _one, _one, nil];
-        self.LevelOneColumnFour =       [NSArray arrayWithObjects:_one, _zero, _zero, _zero, _one, _zero, _zero, _zero, _zero, _zero, _one, _zero, _zero, _zero, _zero, _zero, _zero, _zero, _one, nil];
-        self.LevelOneColumnFive =       [NSArray arrayWithObjects:_one, _one, _one, _zero, _one, _one, _one, _one, _one, _zero, _one, _one, _one, _zero,_one, _one, _one, _one, _one, nil];
-        self.LevelOneColumnSix =        [NSArray arrayWithObjects:_one, _zero, _zero, _zero, _zero, _zero, _zero, _zero, _one, _zero, _zero, _zero, _one, _zero, _one, _zero, _zero, _zero, _zero, nil];
-        self.LevelOneColumnSeven =      [NSArray arrayWithObjects:_one, _one, _one, _one, _one, _one, _one, _zero, _one, _zero, _one, _zero, _one, _one, _one, _zero, _one, _one, _one, nil];
-        self.LevelOneColumnEight =      [NSArray arrayWithObjects:_one, _zero, _zero, _zero, _zero, _zero, _one, _zero, _one, _zero, _one, _zero, _zero, _zero, _zero, _zero, _one, _zero, _one, nil];
-        self.LevelOneColumnNine =       [NSArray arrayWithObjects:_one, _one, _one, _zero, _one, _one, _one, _zero, _one, _zero, _one, _one, _one, _one, _one, _one, _one, _zero, _one, nil];
-        self.LevelOneColumnTen =        [NSArray arrayWithObjects:_zero, _zero, _zero, _zero, _one, _zero, _zero, _zero, _one, _zero, _one, _zero, _zero, _zero, _one, _zero, _zero, _zero, _one, nil];
-        self.LevelOneColumnEleven =     [NSArray arrayWithObjects:_one, _one, _one, _zero, _one, _zero, _one, _one, _one, _zero, _one, _zero, _one, _one, _one, _zero, _one, _zero, _one, nil];
-        self.LevelOneColumnTwelve =     [NSArray arrayWithObjects:_one, _zero, _one, _zero, _one, _zero, _one, _zero, _zero, _zero, _one, _zero, _one, _zero, _zero, _zero, _one, _zero, _one, nil];
-        self.LevelOneColumnThirteen =   [NSArray arrayWithObjects:_one, _zero, _one, _zero, _one, _zero, _one, _one, _one, _zero, _one, _zero, _one, _zero, _one, _one, _one, _one, _one, nil];
-        self.LevelOneColumnFourteen =   [NSArray arrayWithObjects:_one, _zero, _one, _zero, _one, _zero, _zero, _zero, _one, _zero, _one, _zero, _one, _zero, _zero, _zero, _zero, _zero, _one, nil];
-        self.LevelOneColumnFifteen =    [NSArray arrayWithObjects:_one, _zero, _one, _one, _one, _one, _one, _zero, _one, _zero, _one, _zero, _one,  _one, _one, _one, _one, _zero, _one, nil];
-        self.LevelOneColumnSixteen =    [NSArray arrayWithObjects:_one, _zero, _zero, _zero, _zero, _one, _zero, _zero, _zero, _zero, _one, _zero, _one, _zero, _zero, _zero, _zero, _one, _zero, _zero, nil];
-        self.LevelOneColumnSeventeen =  [NSArray arrayWithObjects:_one, _one, _one, _zero, _one, _zero, _one, _one, _one, _zero, _one, _zero, _one, _one, _one, _zero, _one,  _one, _one, nil];
-        self.LevelOneColumnEighteen =   [NSArray arrayWithObjects:_one, _zero, _one, _zero, _zero, _zero, _one,  _zero, _zero, _zero, _zero, _zero, _one, _zero, _one, _zero, _zero, _zero, _one, nil];
-        self.LevelOneColumnNineteen =   [NSArray arrayWithObjects:_one, _zero, _one, _one, _one, _one, _one, _one, _one, _one, _one, _one, _one, _zero, _one, _one, _one, _one, _one, nil];
+        self.LevelOneColumnOne =        [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,nil];
+        self.LevelOneColumnTwo =        [NSArray arrayWithObjects:@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelOneColumnThree =      [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,nil];
+        self.LevelOneColumnFour =       [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelOneColumnFive =       [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelOneColumnSix =        [NSArray arrayWithObjects:@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,nil];
+        self.LevelOneColumnSeven =      [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,nil];
+        self.LevelOneColumnEight =      [NSArray arrayWithObjects:@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,nil];
+        self.LevelOneColumnNine =       [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelOneColumnTen =        [NSArray arrayWithObjects:@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,nil];
+        self.LevelOneColumnEleven =     [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,nil];
+        self.LevelOneColumnTwelve =     [NSArray arrayWithObjects:@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelOneColumnThirteen =   [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelOneColumnFourteen =   [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelOneColumnFifteen =    [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,nil];
+        self.LevelOneColumnSixteen =    [NSArray arrayWithObjects:@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelOneColumnSeventeen =  [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,nil];
+        self.LevelOneColumnEighteen =   [NSArray arrayWithObjects:@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelOneColumnNineteen =   [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,nil];
         
         NSLog(@"Level One columns created");
         NSLog(@"Level One Coloumn one count: %lu", (unsigned long)self.LevelOneColumnOne.count);
@@ -63,6 +60,51 @@
     
          
         NSLog(@"Level one columns added to array");
+        
+        self.LevelTwoColumnOne =        [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelTwoColumnTwo =        [NSArray arrayWithObjects:@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelTwoColumnThree =      [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,nil];
+        self.LevelTwoColumnFour =       [NSArray arrayWithObjects:@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,nil];
+        self.LevelTwoColumnFive =       [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,nil];
+        self.LevelTwoColumnSix =        [NSArray arrayWithObjects:@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelTwoColumnSeven =      [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelTwoColumnEight =      [NSArray arrayWithObjects:@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelTwoColumnNine =       [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,nil];
+        self.LevelTwoColumnTen =        [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelTwoColumnEleven =     [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,nil];
+        self.LevelTwoColumnTwelve =     [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,nil];
+        self.LevelTwoColumnThirteen =   [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,nil];
+        self.LevelTwoColumnFourteen =   [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,nil];
+        self.LevelTwoColumnFifteen =    [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,nil];
+        self.LevelTwoColumnSixteen =    [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelTwoColumnSeventeen =  [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelTwoColumnEighteen =   [NSArray arrayWithObjects:@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,nil];
+        self.LevelTwoColumnNineteen =   [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,nil];
+        
+        NSLog(@"Level Two columns created");
+        NSLog(@"Level Two Coloumn one count: %lu", (unsigned long)self.LevelTwoColumnOne.count);
+        NSLog(@"Level Two Coloumn two count: %lu", (unsigned long)self.LevelTwoColumnTwo.count);
+        NSLog(@"Level Two Coloumn three count: %lu", (unsigned long)self.LevelTwoColumnThree.count);
+        NSLog(@"Level Two Coloumn four count: %lu", (unsigned long)self.LevelTwoColumnFour.count);
+        NSLog(@"Level Two Coloumn five count: %lu", (unsigned long)self.LevelTwoColumnFive.count);
+        NSLog(@"Level Two Coloumn six count: %lu", (unsigned long)self.LevelTwoColumnSix.count);
+        NSLog(@"Level Two Coloumn seven count: %lu", (unsigned long)self.LevelTwoColumnSeven.count);
+        NSLog(@"Level Two Coloumn eight count: %lu", (unsigned long)self.LevelTwoColumnEight.count);
+        NSLog(@"Level Two Coloumn nine count: %lu", (unsigned long)self.LevelTwoColumnNine.count);
+        NSLog(@"Level Two Coloumn ten count: %lu", (unsigned long)self.LevelTwoColumnTen.count);
+        NSLog(@"Level Two Coloumn eleven count: %lu", (unsigned long)self.LevelTwoColumnEleven.count);
+        NSLog(@"Level Two Coloumn twelve count: %lu", (unsigned long)self.LevelTwoColumnTwelve.count);
+        NSLog(@"Level Two Coloumn thirteen count: %lu", (unsigned long)self.LevelTwoColumnThirteen.count);
+        NSLog(@"Level Two Coloumn fourteen count: %lu", (unsigned long)self.LevelTwoColumnFourteen.count);
+        NSLog(@"Level Two Coloumn fifteen count: %lu", (unsigned long)self.LevelTwoColumnFifteen.count);
+        NSLog(@"Level Two Coloumn sixteen count: %lu", (unsigned long)self.LevelTwoColumnSixteen.count);
+        NSLog(@"Level Two Coloumn seventeen count: %lu", (unsigned long)self.LevelTwoColumnSeventeen.count);
+        NSLog(@"Level Two Coloumn eighteen count: %lu", (unsigned long)self.LevelTwoColumnEighteen.count);
+        NSLog(@"Level Two Coloumn nineteen count: %lu", (unsigned long)self.LevelTwoColumnNineteen.count);
+        
+        self.LevelTwo = [NSArray arrayWithObjects:self.LevelTwoColumnOne, self.LevelTwoColumnTwo, self.LevelTwoColumnThree, self.LevelTwoColumnFour, self.LevelTwoColumnFive, self.LevelTwoColumnSix, self.LevelTwoColumnSeven, self.LevelTwoColumnEight, self.LevelTwoColumnNine, self.LevelTwoColumnTen, self.LevelTwoColumnEleven, self.LevelTwoColumnTwelve, self.LevelTwoColumnThirteen, self.LevelTwoColumnFourteen, self.LevelTwoColumnFifteen, self.LevelTwoColumnSixteen, self.LevelTwoColumnSeventeen, self.LevelTwoColumnEighteen, self.LevelTwoColumnNineteen, nil];
+        
+        NSLog(@"Level two columns added to array");
         
     }
     return self;

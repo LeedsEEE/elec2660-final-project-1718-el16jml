@@ -34,4 +34,25 @@
 @property (nonatomic, strong) NSArray* LevelOneColumnEighteen;
 @property (nonatomic, strong) NSArray* LevelOneColumnNineteen;
 
+@property (nonatomic, strong) NSArray* LevelTwo;
+@property (nonatomic, strong) NSArray* LevelTwoColumnOne;
+@property (nonatomic, strong) NSArray* LevelTwoColumnTwo;
+@property (nonatomic, strong) NSArray* LevelTwoColumnThree;
+@property (nonatomic, strong) NSArray* LevelTwoColumnFour;
+@property (nonatomic, strong) NSArray* LevelTwoColumnFive;
+@property (nonatomic, strong) NSArray* LevelTwoColumnSix;
+@property (nonatomic, strong) NSArray* LevelTwoColumnSeven;
+@property (nonatomic, strong) NSArray* LevelTwoColumnEight;
+@property (nonatomic, strong) NSArray* LevelTwoColumnNine;
+@property (nonatomic, strong) NSArray* LevelTwoColumnTen;
+@property (nonatomic, strong) NSArray* LevelTwoColumnEleven;
+@property (nonatomic, strong) NSArray* LevelTwoColumnTwelve;
+@property (nonatomic, strong) NSArray* LevelTwoColumnThirteen;
+@property (nonatomic, strong) NSArray* LevelTwoColumnFourteen;
+@property (nonatomic, strong) NSArray* LevelTwoColumnFifteen;
+@property (nonatomic, strong) NSArray* LevelTwoColumnSixteen;
+@property (nonatomic, strong) NSArray* LevelTwoColumnSeventeen;
+@property (nonatomic, strong) NSArray* LevelTwoColumnEighteen;
+@property (nonatomic, strong) NSArray* LevelTwoColumnNineteen;
+
 @end

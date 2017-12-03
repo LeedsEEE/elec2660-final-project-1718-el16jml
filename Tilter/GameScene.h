@@ -9,14 +9,17 @@
 #import <SpriteKit/SpriteKit.h>
 #import <Foundation/Foundation.h>
 #import "MazeArrays.h"
-#import "TableViewController.h"
-#import "FirstViewController.h"
+#import "SetLevelGameViewController.h"
+#import "Levels.h"
 
 @interface GameScene : SKScene
 
-@property (nonatomic, strong) FirstViewController* viewController;
 @property (nonatomic, strong) MazeArrays* mazeArrays;
 @property int mazeSize;
 @property (nonatomic, strong) NSArray* maze;
+@property (nonatomic, strong) Levels* currentLevel;
+@property (nonatomic, strong) NSString* levelTitle;
+@property (nonatomic, strong) NSString* levelDifficulty;
+//@property (nonatomic, strong) SetLevelGameViewController* viewController;
 
 @end

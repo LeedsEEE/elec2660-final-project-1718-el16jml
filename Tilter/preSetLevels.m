@@ -18,6 +18,7 @@
         MazeArrays *setLevels = [[MazeArrays alloc] init];
         
         self.easyLevels = [NSMutableArray array];
+        
         Levels *levelOne = [[Levels alloc] init];
         levelOne.level = @"Level One";
         levelOne.difficulty = @"Easy";
@@ -28,6 +29,7 @@
         levelTwo.level = @"Level Two";
         levelTwo.difficulty = @"Easy";
         levelTwo.size = 19;
+        levelTwo.Maze = [NSMutableArray arrayWithArray:setLevels.LevelTwo];
         
         [self.easyLevels addObject:levelOne];
         [self.easyLevels addObject:levelTwo];

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "preSetLevels.h"
-#import "FirstViewController.h"
+#import "SetLevelGameViewController.h"
 #import "GameScene.h"
 
 @interface TableViewController : UITableViewController
@@ -16,5 +16,6 @@
 @property (nonatomic, strong) preSetLevels *levels;
 @property (nonatomic, strong) NSArray* maze;
 @property int mazeSize;
+
 
 @end
