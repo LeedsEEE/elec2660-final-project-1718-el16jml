@@ -19,6 +19,7 @@
     //  start updating the manager, using a frame referance where the x rotation (rotation about an axis coming out of the screen of the phone) does not really matter
     [self.motionManager startDeviceMotionUpdatesUsingReferenceFrame: CMAttitudeReferenceFrameXArbitraryCorrectedZVertical];
     
+    NSLog(@"Gyro Updates started");
 }
 
 //  get the motion of the device
@@ -54,6 +55,8 @@
 ///  Returned coordinates are in the form (newX, newY)
 -(CGPoint)updatePlayerMotionFromCurrentPositionWithCurrentX:(float)currentX CurrentY:(float)currentY{
     
+    [self updateDeviceMotion];
+    
     NSNumber *roll = [[self updateDeviceMotion] objectAtIndex:0];
     NSNumber *pitch = [[self updateDeviceMotion] objectAtIndex:1];
     
@@ -61,7 +64,7 @@
     float dY = 2 * [pitch floatValue];
     
     CGFloat newX = currentX + dX;
-    CGFloat newY = currentY + dY;
+    CGFloat newY = currentY - dY;
     
     CGPoint newPosition = CGPointMake(newX, newY);
     
@@ -79,10 +82,7 @@
 
         //  unassign the manager object so it can be checked, and to conserve memory and processing power in the device
         self.motionManager = nil;
-        
-        
     }
-    
 }
 
 @end

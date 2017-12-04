@@ -16,11 +16,13 @@
 @interface SetLevelGameViewController : UIViewController
 
 @property (nonatomic, strong) Levels* currentLevel;
+@property (nonatomic, strong) SKView* skView;
 
 NSMutableArray* GetCurrentMaze();
 NSInteger GetCurrentMazeSize();
 NSString* GetCurrentLevel();
 NSString* GetCurrentDifficulty();
+int presentTheScene();
 
 
 @end

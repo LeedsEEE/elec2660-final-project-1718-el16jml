@@ -24,4 +24,6 @@
 @property (nonatomic, strong) DeviceMotion* gyroData;
 //@property (nonatomic, strong) SetLevelGameViewController* viewController;
 
+@property float cellSize;
+
 @end
