@@ -86,5 +86,38 @@
 @property (nonatomic, strong) NSArray* LevelThreeColumnTwentyEight;
 @property (nonatomic, strong) NSArray* LevelThreeColumnTwentyNine;
 
+@property (nonatomic, strong) NSArray* LevelFour;
+@property (nonatomic, strong) NSArray* LevelFourColumnOne;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwo;
+@property (nonatomic, strong) NSArray* LevelFourColumnThree;
+@property (nonatomic, strong) NSArray* LevelFourColumnFour;
+@property (nonatomic, strong) NSArray* LevelFourColumnFive;
+@property (nonatomic, strong) NSArray* LevelFourColumnSix;
+@property (nonatomic, strong) NSArray* LevelFourColumnSeven;
+@property (nonatomic, strong) NSArray* LevelFourColumnEight;
+@property (nonatomic, strong) NSArray* LevelFourColumnNine;
+@property (nonatomic, strong) NSArray* LevelFourColumnTen;
+@property (nonatomic, strong) NSArray* LevelFourColumnEleven;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwelve;
+@property (nonatomic, strong) NSArray* LevelFourColumnThirteen;
+@property (nonatomic, strong) NSArray* LevelFourColumnFourteen;
+@property (nonatomic, strong) NSArray* LevelFourColumnFifteen;
+@property (nonatomic, strong) NSArray* LevelFourColumnSixteen;
+@property (nonatomic, strong) NSArray* LevelFourColumnSeventeen;
+@property (nonatomic, strong) NSArray* LevelFourColumnEighteen;
+@property (nonatomic, strong) NSArray* LevelFourColumnNineteen;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwenty;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwentyOne;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwentyTwo;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwentyThree;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwentyFour;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwentyFive;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwentySix;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwentySeven;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwentyEight;
+@property (nonatomic, strong) NSArray* LevelFourColumnTwentyNine;
+
+
+
 
 @end

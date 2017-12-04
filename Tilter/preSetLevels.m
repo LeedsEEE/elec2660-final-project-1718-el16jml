@@ -49,6 +49,7 @@
         levelFour.level = @"Level Four";
         levelFour.difficulty = @"Medium";
         levelFour.size = 29;
+        levelFour.Maze = [NSMutableArray arrayWithArray:setLevels.LevelFour];
         
         [self.mediumLevels addObject:levelThree];
         [self.mediumLevels addObject:levelFour];
