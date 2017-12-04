@@ -62,6 +62,7 @@ NSString* GetCurrentDifficulty(){
     [skView presentScene:scene];
     
     NSLog(@"Scene Presented");
+
 }
 
 - (void)didReceiveMemoryWarning {

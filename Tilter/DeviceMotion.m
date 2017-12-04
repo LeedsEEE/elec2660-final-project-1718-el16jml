@@ -11,7 +11,7 @@
 @implementation DeviceMotion
 
 //  start collecting data about the motion of the device
--(void)initMotionUpdates{
+-(void)startMotionUpdates{
     //  create a motion manager object
     self.motionManager = [[CMMotionManager alloc] init];
     //  set the interval at which the motion manager should update
@@ -52,7 +52,7 @@
 
 //  update the motion of the player by returning a difference in coordinates according to the orientation of the device.
 ///  Returned coordinates are in the form (newX, newY)
--(NSArray*)updatePlayerMotionFromCurrentPositionWithCurrentX:(float)currentX CurrentY:(float)currentY{
+-(CGPoint)updatePlayerMotionFromCurrentPositionWithCurrentX:(float)currentX CurrentY:(float)currentY{
     
     NSNumber *roll = [[self updateDeviceMotion] objectAtIndex:0];
     NSNumber *pitch = [[self updateDeviceMotion] objectAtIndex:1];
@@ -60,12 +60,12 @@
     float dX = 2 * [roll floatValue];
     float dY = 2 * [pitch floatValue];
     
-    float newX = currentX + dX;
-    float newY = currentY + dY;
+    CGFloat newX = currentX + dX;
+    CGFloat newY = currentY + dY;
     
-    NSArray *newPositionArray = [NSArray arrayWithObjects:[NSNumber numberWithFloat:newX], [NSNumber numberWithFloat:newY], nil];
+    CGPoint newPosition = CGPointMake(newX, newY);
     
-    return newPositionArray;
+    return newPosition;
 }
 
 //  stop collecting data about the motion of the device

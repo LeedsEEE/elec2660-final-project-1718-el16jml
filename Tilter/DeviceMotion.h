@@ -14,8 +14,8 @@
 
 @property (nonatomic, strong) CMMotionManager * motionManager;
 
--(void)initMotionUpdates;
+-(void)startMotionUpdates;
 -(void)stopMotionUpdates;
--(NSArray*)updatePlayerMotionFromCurrentPositionWithCurrentX:(float)currentX CurrentY:(float)currentY;
+-(CGPoint)updatePlayerMotionFromCurrentPositionWithCurrentX:(float)currentX CurrentY:(float)currentY;
 
 @end

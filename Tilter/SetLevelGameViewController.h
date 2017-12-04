@@ -22,4 +22,5 @@ NSInteger GetCurrentMazeSize();
 NSString* GetCurrentLevel();
 NSString* GetCurrentDifficulty();
 
+
 @end

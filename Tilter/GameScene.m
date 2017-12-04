@@ -14,6 +14,7 @@
     SKShapeNode *node;
     SKLabelNode *levelTitleLabel;
     SKLabelNode *levelDifficultyLabel;
+    SKShapeNode *player;
 }
 
 - (void)didMoveToView:(SKView *)view {
@@ -63,8 +64,29 @@
         }
     }
     NSLog(@"For loop Completed");
+    
+    //  initialise the collection of the gyroscope data
+    [self.gyroData startMotionUpdates];
+    
+    player = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(cellSize, cellSize)];
+    player.strokeColor = [UIColor blueColor];
+    player.fillColor = [UIColor blueColor];
+    CGFloat currentPlayerXPosition = (CGFloat) 100.0;
+    CGFloat currentPlayerYPosition = (CGFloat) 100.0;
+    player.position = CGPointMake(currentPlayerXPosition, currentPlayerYPosition);
+
+    //while (true) {
+        CGPoint newPosition = [self.gyroData updatePlayerMotionFromCurrentPositionWithCurrentX:player.position.x CurrentY:player.position.y];
+        
+        player.position = newPosition;
+    //}
+    
+    [self addChild:player];
 }
 
-
+- (void)willMoveFromView:(SKView *)view{
+    //  stop collecting gyroscope data when the view closes, to conserve memory and processing power
+    [self.gyroData stopMotionUpdates];
+}
 
 @end
