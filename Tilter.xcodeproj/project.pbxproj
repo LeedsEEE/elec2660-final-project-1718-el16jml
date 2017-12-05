@@ -15,6 +15,13 @@
 		5F1C1D571FCDA9E100681BB2 /* MazeArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D561FCDA9E000681BB2 /* MazeArrays.m */; };
 		5F1C1D5A1FCDB62900681BB2 /* SetLevelGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D591FCDB62900681BB2 /* SetLevelGameViewController.m */; };
 		5F1C1D5D1FCDB91B00681BB2 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D5C1FCDB91B00681BB2 /* GameScene.m */; };
+		5F848DC31FD6A3140072EA16 /* TWDepthFirstPathFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F848DB91FD6A3130072EA16 /* TWDepthFirstPathFinder.m */; };
+		5F848DC41FD6A3140072EA16 /* TWMazeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F848DBB1FD6A3140072EA16 /* TWMazeGenerator.m */; };
+		5F848DC51FD6A3140072EA16 /* TWTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F848DBF1FD6A3140072EA16 /* TWTile.m */; };
+		5F848DC71FD6A3140072EA16 /* TWMaze.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F848DC21FD6A3140072EA16 /* TWMaze.m */; };
+		5F848DC91FD6A6300072EA16 /* RandomLevelsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F848DC81FD6A6300072EA16 /* RandomLevelsScene.sks */; };
+		5F848DCC1FD6A9040072EA16 /* RandomLevelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F848DCB1FD6A9040072EA16 /* RandomLevelsViewController.m */; };
+		5F848DCF1FD6AB160072EA16 /* RandomLevelsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F848DCE1FD6AB160072EA16 /* RandomLevelsScene.m */; };
 		5FA88C401FC1DD0A0004D272 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA88C3F1FC1DD060004D272 /* GameplayKit.framework */; };
 		5FA88C421FC1DD220004D272 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA88C411FC1DD1F0004D272 /* CoreMotion.framework */; };
 		5FB491E81FD55641006FA910 /* DeviceMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB491E71FD55641006FA910 /* DeviceMotion.m */; };
@@ -59,6 +66,20 @@
 		5F1C1D591FCDB62900681BB2 /* SetLevelGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetLevelGameViewController.m; sourceTree = "<group>"; };
 		5F1C1D5B1FCDB91B00681BB2 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		5F1C1D5C1FCDB91B00681BB2 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		5F848DB81FD6A3130072EA16 /* TWMaze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMaze.h; sourceTree = "<group>"; };
+		5F848DB91FD6A3130072EA16 /* TWDepthFirstPathFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWDepthFirstPathFinder.m; sourceTree = "<group>"; };
+		5F848DBA1FD6A3130072EA16 /* TWMazeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMazeGenerator.h; sourceTree = "<group>"; };
+		5F848DBB1FD6A3140072EA16 /* TWMazeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMazeGenerator.m; sourceTree = "<group>"; };
+		5F848DBC1FD6A3140072EA16 /* TWTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTile.h; sourceTree = "<group>"; };
+		5F848DBE1FD6A3140072EA16 /* TWPathFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPathFinder.h; sourceTree = "<group>"; };
+		5F848DBF1FD6A3140072EA16 /* TWTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTile.m; sourceTree = "<group>"; };
+		5F848DC11FD6A3140072EA16 /* TWDepthFirstPathFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWDepthFirstPathFinder.h; sourceTree = "<group>"; };
+		5F848DC21FD6A3140072EA16 /* TWMaze.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMaze.m; sourceTree = "<group>"; };
+		5F848DC81FD6A6300072EA16 /* RandomLevelsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RandomLevelsScene.sks; sourceTree = "<group>"; };
+		5F848DCA1FD6A9040072EA16 /* RandomLevelsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomLevelsViewController.h; sourceTree = "<group>"; };
+		5F848DCB1FD6A9040072EA16 /* RandomLevelsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomLevelsViewController.m; sourceTree = "<group>"; };
+		5F848DCD1FD6AB160072EA16 /* RandomLevelsScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomLevelsScene.h; sourceTree = "<group>"; };
+		5F848DCE1FD6AB160072EA16 /* RandomLevelsScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomLevelsScene.m; sourceTree = "<group>"; };
 		5FA88C3F1FC1DD060004D272 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
 		5FA88C411FC1DD1F0004D272 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		5FB491E61FD55641006FA910 /* DeviceMotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceMotion.h; sourceTree = "<group>"; };
@@ -127,6 +148,27 @@
 			name = "Pre Set Levels";
 			sourceTree = "<group>";
 		};
+		5F848DB71FD6A2CE0072EA16 /* Random Levels */ = {
+			isa = PBXGroup;
+			children = (
+				5F848DC11FD6A3140072EA16 /* TWDepthFirstPathFinder.h */,
+				5F848DB91FD6A3130072EA16 /* TWDepthFirstPathFinder.m */,
+				5F848DB81FD6A3130072EA16 /* TWMaze.h */,
+				5F848DC21FD6A3140072EA16 /* TWMaze.m */,
+				5F848DBA1FD6A3130072EA16 /* TWMazeGenerator.h */,
+				5F848DBB1FD6A3140072EA16 /* TWMazeGenerator.m */,
+				5F848DBC1FD6A3140072EA16 /* TWTile.h */,
+				5F848DBF1FD6A3140072EA16 /* TWTile.m */,
+				5F848DBE1FD6A3140072EA16 /* TWPathFinder.h */,
+				5F848DCA1FD6A9040072EA16 /* RandomLevelsViewController.h */,
+				5F848DCB1FD6A9040072EA16 /* RandomLevelsViewController.m */,
+				5F848DCD1FD6AB160072EA16 /* RandomLevelsScene.h */,
+				5F848DCE1FD6AB160072EA16 /* RandomLevelsScene.m */,
+				5F848DC81FD6A6300072EA16 /* RandomLevelsScene.sks */,
+			);
+			path = "Random Levels";
+			sourceTree = "<group>";
+		};
 		5FA88C3E1FC1DD060004D272 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +203,7 @@
 		CE8212CB1FBB36E800AED4EE /* Tilter */ = {
 			isa = PBXGroup;
 			children = (
+				5F848DB71FD6A2CE0072EA16 /* Random Levels */,
 				5F1C1D511FCAFB9A00681BB2 /* Pre Set Levels */,
 				5FB491E61FD55641006FA910 /* DeviceMotion.h */,
 				5FB491E71FD55641006FA910 /* DeviceMotion.m */,
@@ -308,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F1C1CA61FC1FBEF00681BB2 /* GameScene.sks in Resources */,
+				5F848DC91FD6A6300072EA16 /* RandomLevelsScene.sks in Resources */,
 				CE8212DF1FBB36E800AED4EE /* LaunchScreen.storyboard in Resources */,
 				CE8212DC1FBB36E800AED4EE /* Assets.xcassets in Resources */,
 				CE8212DA1FBB36E800AED4EE /* Main.storyboard in Resources */,
@@ -335,14 +379,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F848DC51FD6A3140072EA16 /* TWTile.m in Sources */,
 				5F1C1D4C1FCAF7A700681BB2 /* Levels.m in Sources */,
 				5F1C1D5A1FCDB62900681BB2 /* SetLevelGameViewController.m in Sources */,
+				5F848DC71FD6A3140072EA16 /* TWMaze.m in Sources */,
+				5F848DC31FD6A3140072EA16 /* TWDepthFirstPathFinder.m in Sources */,
 				5F1C1D541FCAFD2200681BB2 /* TableViewController.m in Sources */,
 				CE8212D11FBB36E800AED4EE /* AppDelegate.m in Sources */,
 				5FB491E81FD55641006FA910 /* DeviceMotion.m in Sources */,
+				5F848DCC1FD6A9040072EA16 /* RandomLevelsViewController.m in Sources */,
 				CE8212CE1FBB36E800AED4EE /* main.m in Sources */,
 				5F1C1D571FCDA9E100681BB2 /* MazeArrays.m in Sources */,
+				5F848DC41FD6A3140072EA16 /* TWMazeGenerator.m in Sources */,
 				5F1C1D5D1FCDB91B00681BB2 /* GameScene.m in Sources */,
+				5F848DCF1FD6AB160072EA16 /* RandomLevelsScene.m in Sources */,
 				5F1C1D4F1FCAF8C500681BB2 /* preSetLevels.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

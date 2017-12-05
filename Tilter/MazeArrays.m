@@ -202,7 +202,7 @@
         self.LevelFourColumnTwenty =     [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,nil];
         self.LevelFourColumnTwentyOne =        [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,nil];
         self.LevelFourColumnTwentyTwo =        [NSArray arrayWithObjects:@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,nil];
-        self.LevelFourColumnTwentyFour =       [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,nil];
+        self.LevelFourColumnTwentyThree =       [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,nil];
         self.LevelFourColumnTwentyFour =       [NSArray arrayWithObjects:@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,nil];
         self.LevelFourColumnTwentyFive =       [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,nil];
         self.LevelFourColumnTwentySix =        [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,nil];
@@ -231,19 +231,19 @@
         NSLog(@"Level Four Coloumn eighteen count: %lu", (unsigned long)self.LevelFourColumnEighteen.count);
         NSLog(@"Level Four Coloumn nineteen count: %lu", (unsigned long)self.LevelFourColumnNineteen.count);
         NSLog(@"Level Four Coloumn twenty count: %lu", (unsigned long)self.LevelFourColumnTwenty.count);
-        NSLog(@"Level Four Coloumn twenty one count: %lu", (unsigned long)self.LevelFourColumnOne.count);
-        NSLog(@"Level Four Coloumn twenty two count: %lu", (unsigned long)self.LevelFourColumnTwo.count);
-        NSLog(@"Level Four Coloumn twenty four count: %lu", (unsigned long)self.LevelFourColumnFour.count);
-        NSLog(@"Level Four Coloumn twenty four count: %lu", (unsigned long)self.LevelFourColumnFour.count);
-        NSLog(@"Level Four Coloumn twenty five count: %lu", (unsigned long)self.LevelFourColumnFive.count);
-        NSLog(@"Level Four Coloumn twenty six count: %lu", (unsigned long)self.LevelFourColumnSix.count);
-        NSLog(@"Level Four Coloumn twenty seven count: %lu", (unsigned long)self.LevelFourColumnSeven.count);
-        NSLog(@"Level Four Coloumn twenty eight count: %lu", (unsigned long)self.LevelFourColumnEight.count);
-        NSLog(@"Level Four Coloumn twenty nine count: %lu", (unsigned long)self.LevelFourColumnNine.count);
+        NSLog(@"Level Four Coloumn twenty one count: %lu", (unsigned long)self.LevelFourColumnTwentyOne.count);
+        NSLog(@"Level Four Coloumn twenty two count: %lu", (unsigned long)self.LevelFourColumnTwentyTwo.count);
+        NSLog(@"Level Four Coloumn twenty three count: %lu", (unsigned long)self.LevelFourColumnTwentyThree.count);
+        NSLog(@"Level Four Coloumn twenty four count: %lu", (unsigned long)self.LevelFourColumnTwentyFour.count);
+        NSLog(@"Level Four Coloumn twenty five count: %lu", (unsigned long)self.LevelFourColumnTwentyFive.count);
+        NSLog(@"Level Four Coloumn twenty six count: %lu", (unsigned long)self.LevelFourColumnTwentySix.count);
+        NSLog(@"Level Four Coloumn twenty seven count: %lu", (unsigned long)self.LevelFourColumnTwentySeven.count);
+        NSLog(@"Level Four Coloumn twenty eight count: %lu", (unsigned long)self.LevelFourColumnTwentyEight.count);
+        NSLog(@"Level Four Coloumn twenty nine count: %lu", (unsigned long)self.LevelFourColumnTwentyNine.count);
         
 
         
-        self.LevelThree = [NSArray arrayWithObjects:self.LevelThreeColumnOne, self.LevelThreeColumnTwo, self.LevelThreeColumnThree, self.LevelThreeColumnFour, self.LevelThreeColumnFive, self.LevelThreeColumnSix, self.LevelThreeColumnSeven, self.LevelThreeColumnEight, self.LevelThreeColumnNine, self.LevelThreeColumnTen, self.LevelThreeColumnEleven, self.LevelThreeColumnTwelve, self.LevelThreeColumnThirteen, self.LevelThreeColumnFourteen, self.LevelThreeColumnFifteen, self.LevelThreeColumnSixteen, self.LevelThreeColumnSeventeen, self.LevelThreeColumnEighteen, self.LevelThreeColumnNineteen, self.LevelThreeColumnTwenty, self.LevelThreeColumnTwentyOne, self.LevelThreeColumnTwentyTwo, self.LevelThreeColumnTwentyThree, self.LevelThreeColumnTwentyFour, self.LevelThreeColumnTwentyFive, self.LevelThreeColumnTwentySix, self.LevelThreeColumnTwentySeven, self.LevelThreeColumnTwentyEight, self.LevelThreeColumnTwentyNine, nil];
+        self.LevelFour = [NSArray arrayWithObjects:self.LevelFourColumnOne, self.LevelFourColumnTwo, self.LevelFourColumnThree, self.LevelFourColumnFour, self.LevelFourColumnFive, self.LevelFourColumnSix, self.LevelFourColumnSeven, self.LevelFourColumnEight, self.LevelFourColumnNine, self.LevelFourColumnTen, self.LevelFourColumnEleven, self.LevelFourColumnTwelve, self.LevelFourColumnThirteen, self.LevelFourColumnFourteen, self.LevelFourColumnFifteen, self.LevelFourColumnSixteen, self.LevelFourColumnSeventeen, self.LevelFourColumnEighteen, self.LevelFourColumnNineteen, self.LevelFourColumnTwenty, self.LevelFourColumnTwentyOne, self.LevelFourColumnTwentyTwo, self.LevelFourColumnTwentyThree, self.LevelFourColumnTwentyFour, self.LevelFourColumnTwentyFive, self.LevelFourColumnTwentySix, self.LevelFourColumnTwentySeven, self.LevelFourColumnTwentyEight, self.LevelFourColumnTwentyNine, nil];
         
     }
     return self;

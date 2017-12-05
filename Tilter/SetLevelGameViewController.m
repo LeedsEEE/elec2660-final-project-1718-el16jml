@@ -48,7 +48,7 @@ NSString* GetCurrentDifficulty(){
     currentLevel = self.currentLevel;
     
     //  load the scene from skscene
-        GameScene *scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];
+    GameScene *scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];
     
     NSLog(@"Scene loaded to view controller");
     
