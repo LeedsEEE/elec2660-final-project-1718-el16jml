@@ -17,12 +17,14 @@
     SKLabelNode *wellDoneLabel;
     SKLabelNode *levelCompleteLabel;
     SKLabelNode *timeLabel;
+    SKLabelNode *bestTimeLabel;
     SKShapeNode *player;
     SKShapeNode *start;
     SKShapeNode *end;
     SKPhysicsBody *nodePhysics;
     SKPhysicsBody *playerPhysics;
 }
+
 
 - (void)didMoveToView:(SKView *)view {
 
@@ -32,8 +34,9 @@
     wellDoneLabel = (SKLabelNode *)[self childNodeWithName:@"WellDone"];
     levelCompleteLabel = (SKLabelNode *)[self childNodeWithName:@"LevelComplete"];
     timeLabel = (SKLabelNode *)[self childNodeWithName:@"TimeLabel"];
+    bestTimeLabel = (SKLabelNode *)[self childNodeWithName:@"BestTimeLabel"];
     
-    
+
     //  Hide the finished level label
     wellDoneLabel.hidden = YES;
     levelCompleteLabel.hidden = YES;
@@ -42,6 +45,7 @@
     //  set the labels
     levelTitleLabel.text = GetCurrentLevel();
     levelDifficultyLabel.text = GetCurrentDifficulty();
+    bestTimeLabel.text = [NSString stringWithFormat:@"Best Time: %.2f", _currentLevel.bestTime];
     
     //  get the maze
     self.maze = GetCurrentMaze();
@@ -164,8 +168,20 @@
             [self.levelTimer invalidate];
             wellDoneLabel.hidden = NO;
             levelCompleteLabel.hidden = NO;
+            
+            if (_currentLevel.bestTime == 0){
+                _currentLevel.bestTime = _timefloat;
+            }
+            else if (_timefloat < _currentLevel.bestTime){
+                _currentLevel.bestTime = _timefloat;
+                [self.setLevels.userDefaults setFloat:_timefloat forKey:[NSString stringWithFormat:@"%@ Best Time", self.currentLevel.level]];
+                NSLog(@"%@ Best Time", self.currentLevel.level);
+                
+            }
+            
         }
     }
+    
 }
 
 @end

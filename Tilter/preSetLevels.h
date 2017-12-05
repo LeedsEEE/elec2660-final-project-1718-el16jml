@@ -15,5 +15,6 @@
 @property (strong,nonatomic) NSMutableArray *easyLevels;
 @property (strong,nonatomic) NSMutableArray *mediumLevels;
 @property (strong,nonatomic) NSMutableArray *hardLevels;
+@property (strong,nonatomic) NSUserDefaults *userDefaults;
 
 @end

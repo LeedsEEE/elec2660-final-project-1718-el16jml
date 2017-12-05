@@ -25,12 +25,15 @@
         levelOne.difficulty = @"Easy";
         levelOne.size = 19;
         levelOne.Maze = [NSMutableArray arrayWithArray:setLevels.LevelOne];
+        levelOne.bestTime = [_userDefaults floatForKey:@"Level One Best Time"];
+        
         
         Levels *levelTwo = [[Levels alloc] init];
         levelTwo.level = @"Level Two";
         levelTwo.difficulty = @"Easy";
         levelTwo.size = 19;
         levelTwo.Maze = [NSMutableArray arrayWithArray:setLevels.LevelTwo];
+        levelTwo.bestTime = [_userDefaults floatForKey:@"Level Two Best Time"];
         
         [self.easyLevels addObject:levelOne];
         [self.easyLevels addObject:levelTwo];
@@ -43,6 +46,7 @@
         levelThree.difficulty = @"Medium";
         levelThree.size = 29;
         levelThree.Maze = [NSMutableArray arrayWithArray:setLevels.LevelThree];
+        levelThree.bestTime = [_userDefaults floatForKey:@"Level Three Best Time"];
         
         self.mediumLevels = [NSMutableArray array];
         Levels *levelFour = [[Levels alloc] init];
@@ -50,6 +54,7 @@
         levelFour.difficulty = @"Medium";
         levelFour.size = 29;
         levelFour.Maze = [NSMutableArray arrayWithArray:setLevels.LevelFour];
+        levelFour.bestTime = [_userDefaults floatForKey:@"Level Four Best Time"];
         
         [self.mediumLevels addObject:levelThree];
         [self.mediumLevels addObject:levelFour];
@@ -61,12 +66,14 @@
         levelFive.level = @"Level Five";
         levelFive.difficulty = @"Hard";
         levelFive.size = 39;
+        levelFive.bestTime = [_userDefaults floatForKey:@"Level Five Best Time"];
         
         self.hardLevels = [NSMutableArray array];
         Levels *levelSix = [[Levels alloc] init];
         levelSix.level = @"Level Six";
         levelSix.difficulty = @"Hard";
         levelSix.size = 39;
+        levelSix.bestTime = [_userDefaults floatForKey:@"Level Six Best Time"];
         
         [self.hardLevels addObject:levelFive];
         [self.hardLevels addObject:levelSix];
