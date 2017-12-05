@@ -61,6 +61,9 @@ NSString* GetCurrentDifficulty(){
     SKView *skView = (SKView *)self.view;
     [skView presentScene:scene];
     
+    //skView.showsFPS = YES;
+    skView.preferredFramesPerSecond = 60;
+    
     NSLog(@"Scene Presented");
 
 }
@@ -70,6 +73,28 @@ NSString* GetCurrentDifficulty(){
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/* int presentTheScene(){
+    
+    GameScene *scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];
+    
+    NSLog(@"Scene loaded to view controller");
+    
+    //  fit the scene to the window
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+    
+    NSLog(@"Scene scaled to view size");
+    
+    //  Present the scene
+    SKView *skView = (SKView *)self.view;
+    [skView presentScene:scene];
+    
+    skView.showsFPS = YES;
+    
+    NSLog(@"Scene Presented");
+    
+}
+
 
 /*
 #pragma mark - Navigation

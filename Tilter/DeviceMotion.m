@@ -60,8 +60,8 @@
     NSNumber *roll = [[self updateDeviceMotion] objectAtIndex:0];
     NSNumber *pitch = [[self updateDeviceMotion] objectAtIndex:1];
     
-    float dX = 2 * [roll floatValue];
-    float dY = 2 * [pitch floatValue];
+    float dX = 10 * [roll floatValue];
+    float dY = 10 * [pitch floatValue];
     
     CGFloat newX = currentX + dX;
     CGFloat newY = currentY - dY;

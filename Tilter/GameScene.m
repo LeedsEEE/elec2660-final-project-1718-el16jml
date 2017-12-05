@@ -14,6 +14,8 @@
     SKShapeNode *node;
     SKLabelNode *levelTitleLabel;
     SKLabelNode *levelDifficultyLabel;
+    SKLabelNode *wellDoneLabel;
+    SKLabelNode *levelCompleteLabel;
     SKShapeNode *player;
     SKShapeNode *start;
     SKShapeNode *end;
@@ -26,6 +28,13 @@
     // get the labels
     levelTitleLabel = (SKLabelNode *)[self childNodeWithName:@"levelLabel"];
     levelDifficultyLabel = (SKLabelNode *)[self childNodeWithName:@"difficultyLabel"];
+    wellDoneLabel = (SKLabelNode *)[self childNodeWithName:@"WellDone"];
+    levelCompleteLabel = (SKLabelNode *)[self childNodeWithName:@"LevelComplete"];
+    
+    //  Hide the finished level label
+    wellDoneLabel.hidden = YES;
+    levelCompleteLabel.hidden = YES;
+    
     
     //  set the labels
     levelTitleLabel.text = GetCurrentLevel();
@@ -116,12 +125,6 @@
     end.position = CGPointMake((((self.mazeSize - 1) * self.cellSize) + (0.5 * self.cellSize) - 320), ((0* self.cellSize) + (0.5 * self.cellSize) - 320));
     [self addChild:end];
     NSLog(@"End node created");
-
-    //while (true) {
-        //CGPoint newPosition = [self.gyroData updatePlayerMotionFromCurrentPositionWithCurrentX:player.position.x CurrentY:player.position.y];
-        
-        //player.position = newPosition;
-    //}
     
     [self addChild:player];
     
@@ -138,28 +141,27 @@
         NSLog(@"Position = %@", NSStringFromCGPoint(player.position));
         
     //}
+    
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@"Touches Began");
-    //while (true) {
-
+-(void)didFinishUpdate{
     CGPoint newPosition = [_gyroData updatePlayerMotionFromCurrentPositionWithCurrentX:player.position.x CurrentY:player.position.y];
-            
+    
     player.position = newPosition;
-
-    NSLog(@"Position = %@", NSStringFromCGPoint(player.position));
-    NSLog(@"Cell Size = %f", self.cellSize);
-}
-
--(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@"Touches Ended");
-}
-
-- (void)willMoveFromView:(SKView *)view{
-    //  stop collecting gyroscope data when the view closes, to conserve memory and processing power
-    [self.gyroData stopMotionUpdates];
-    NSLog(@"Gyro Updates stopped");
+    
+    int endX = (int)end.position.x;
+    int endY = (int)end.position.y;
+    
+    if (player.position.x > (endX - (self.cellSize / 2)) && player.position.x < (endX + (self.cellSize / 2))){
+        if (player.position.y > (endY - (self.cellSize / 2)) && player.position.y < (endY + (self.cellSize / 2))){
+            wellDoneLabel.hidden = NO;
+            levelCompleteLabel.hidden = NO;
+        }
+    }
+    
+    
+    
+    
 }
 
 @end
