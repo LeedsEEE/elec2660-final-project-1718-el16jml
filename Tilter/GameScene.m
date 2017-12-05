@@ -16,6 +16,7 @@
     SKLabelNode *levelDifficultyLabel;
     SKLabelNode *wellDoneLabel;
     SKLabelNode *levelCompleteLabel;
+    SKLabelNode *timeLabel;
     SKShapeNode *player;
     SKShapeNode *start;
     SKShapeNode *end;
@@ -30,6 +31,8 @@
     levelDifficultyLabel = (SKLabelNode *)[self childNodeWithName:@"difficultyLabel"];
     wellDoneLabel = (SKLabelNode *)[self childNodeWithName:@"WellDone"];
     levelCompleteLabel = (SKLabelNode *)[self childNodeWithName:@"LevelComplete"];
+    timeLabel = (SKLabelNode *)[self childNodeWithName:@"TimeLabel"];
+    
     
     //  Hide the finished level label
     wellDoneLabel.hidden = YES;
@@ -134,34 +137,35 @@
     //  initialise the collection of the gyroscope data
     [_gyroData startMotionUpdates];
     
-    //while (true){
-        CGPoint newPosition = [_gyroData updatePlayerMotionFromCurrentPositionWithCurrentX:player.position.x CurrentY:player.position.y];
-        
-        player.position = newPosition;
-        NSLog(@"Position = %@", NSStringFromCGPoint(player.position));
-        
-    //}
+    self.timefloat = 0.1;
+    self.levelTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 repeats:YES block:^(NSTimer *timer){self.timefloat += 0.1;}];
     
+    timeLabel.text = [NSString stringWithFormat:@"Time = 0.00"];
 }
 
+//  Executed every frame:
 -(void)didFinishUpdate{
     CGPoint newPosition = [_gyroData updatePlayerMotionFromCurrentPositionWithCurrentX:player.position.x CurrentY:player.position.y];
     
+    //  update the player position
     player.position = newPosition;
     
+    //  update the time label
+    timeLabel.text = [NSString stringWithFormat:@"Time = %.2f", _timefloat];
+    
+    //  get the position of the end node as an integer
     int endX = (int)end.position.x;
     int endY = (int)end.position.y;
     
+    //  whent he player reaches the end, show the two labels to say its complete
     if (player.position.x > (endX - (self.cellSize / 2)) && player.position.x < (endX + (self.cellSize / 2))){
         if (player.position.y > (endY - (self.cellSize / 2)) && player.position.y < (endY + (self.cellSize / 2))){
+            [_gyroData stopMotionUpdates];
+            [self.levelTimer invalidate];
             wellDoneLabel.hidden = NO;
             levelCompleteLabel.hidden = NO;
         }
     }
-    
-    
-    
-    
 }
 
 @end

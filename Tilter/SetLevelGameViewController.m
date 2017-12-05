@@ -94,7 +94,7 @@ NSString* GetCurrentDifficulty(){
     NSLog(@"Scene Presented");
     
 }
-
+*/
 
 /*
 #pragma mark - Navigation

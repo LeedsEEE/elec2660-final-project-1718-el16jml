@@ -22,7 +22,9 @@
 @property (nonatomic, strong) NSString* levelTitle;
 @property (nonatomic, strong) NSString* levelDifficulty;
 @property (nonatomic, strong) DeviceMotion* gyroData;
+@property (nonatomic, strong) NSTimer *levelTimer;
 
 @property float cellSize;
+@property float timefloat;
 
 @end
