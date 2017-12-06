@@ -25,7 +25,6 @@
         levelOne.difficulty = @"Easy";
         levelOne.size = 19;
         levelOne.Maze = [NSMutableArray arrayWithArray:setLevels.LevelOne];
-        levelOne.bestTime = [_userDefaults floatForKey:@"Level One Best Time"];
         
         
         Levels *levelTwo = [[Levels alloc] init];

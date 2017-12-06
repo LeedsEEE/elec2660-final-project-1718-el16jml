@@ -36,6 +36,10 @@ NSString* GetCurrentDifficulty(){
     return currentLevel.difficulty;
 }
 
+NSString* GetBestTime(){
+    return [NSString stringWithFormat:@"Best time = %.2f", currentLevel.bestTime];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -73,28 +77,6 @@ NSString* GetCurrentDifficulty(){
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/* int presentTheScene(){
-    
-    GameScene *scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];
-    
-    NSLog(@"Scene loaded to view controller");
-    
-    //  fit the scene to the window
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    NSLog(@"Scene scaled to view size");
-    
-    //  Present the scene
-    SKView *skView = (SKView *)self.view;
-    [skView presentScene:scene];
-    
-    skView.showsFPS = YES;
-    
-    NSLog(@"Scene Presented");
-    
-}
-*/
 
 /*
 #pragma mark - Navigation

@@ -41,12 +41,6 @@
     wellDoneLabel.hidden = YES;
     levelCompleteLabel.hidden = YES;
     
-    
-    //  set the labels
-    levelTitleLabel.text = GetCurrentLevel();
-    levelDifficultyLabel.text = GetCurrentDifficulty();
-    bestTimeLabel.text = [NSString stringWithFormat:@"Best Time: %.2f", _currentLevel.bestTime];
-    
     //  get the maze
     self.maze = GetCurrentMaze();
 
@@ -54,6 +48,12 @@
     self.mazeSize = GetCurrentMazeSize();
     
     NSLog(@"Maze size set as: %d", self.mazeSize);
+    
+    //  set the labels
+    levelTitleLabel.text = GetCurrentLevel();
+    levelDifficultyLabel.text = GetCurrentDifficulty();
+    bestTimeLabel.text = GetBestTime();
+    
     
     //  Set the cell size
     self.cellSize = 640.0/self.mazeSize;
@@ -171,17 +171,16 @@
             
             if (_currentLevel.bestTime == 0){
                 _currentLevel.bestTime = _timefloat;
+                //[self.setLevels.userDefaults setFloat:_timefloat forKey:[NSString stringWithFormat:@"%@ Best Time", self.currentLevel.level]];
+                NSLog(@"Best Time %f", self.currentLevel.bestTime);
             }
             else if (_timefloat < _currentLevel.bestTime){
                 _currentLevel.bestTime = _timefloat;
-                [self.setLevels.userDefaults setFloat:_timefloat forKey:[NSString stringWithFormat:@"%@ Best Time", self.currentLevel.level]];
-                NSLog(@"%@ Best Time", self.currentLevel.level);
-                
+                //[self.setLevels.userDefaults setFloat:_timefloat forKey:[NSString stringWithFormat:@"%@ Best Time", self.currentLevel.level]];
+                NSLog(@"Best Time %f", self.currentLevel.bestTime);
             }
-            
         }
     }
-    
 }
 
 @end

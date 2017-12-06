@@ -22,7 +22,7 @@ NSMutableArray* GetCurrentMaze();
 NSInteger GetCurrentMazeSize();
 NSString* GetCurrentLevel();
 NSString* GetCurrentDifficulty();
-int presentTheScene();
+NSString* GetBestTime();
 
 
 @end
