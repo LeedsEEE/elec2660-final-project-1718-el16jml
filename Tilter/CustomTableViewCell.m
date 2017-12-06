@@ -1,14 +1,14 @@
 //
-//  TableViewCell.m
+//  CustomTableViewCell.m
 //  Tilter
 //
 //  Created by Julian Lee on 06/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "TableViewCell.h"
+#import "CustomTableViewCell.h"
 
-@implementation TableViewCell
+@implementation CustomTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

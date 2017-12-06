@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomTableViewCell.h"
 #import "preSetLevels.h"
 #import "SetLevelGameViewController.h"
 #import "GameScene.h"

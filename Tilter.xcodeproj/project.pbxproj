@@ -15,7 +15,7 @@
 		5F1C1D571FCDA9E100681BB2 /* MazeArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D561FCDA9E000681BB2 /* MazeArrays.m */; };
 		5F1C1D5A1FCDB62900681BB2 /* SetLevelGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D591FCDB62900681BB2 /* SetLevelGameViewController.m */; };
 		5F1C1D5D1FCDB91B00681BB2 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C1D5C1FCDB91B00681BB2 /* GameScene.m */; };
-		5F8754461FD83ECE0056F63D /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8754451FD83ECE0056F63D /* TableViewCell.m */; };
+		5F6641CB1FD84B7200211294 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6641CA1FD84B7200211294 /* CustomTableViewCell.m */; };
 		5FA88C401FC1DD0A0004D272 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA88C3F1FC1DD060004D272 /* GameplayKit.framework */; };
 		5FA88C421FC1DD220004D272 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA88C411FC1DD1F0004D272 /* CoreMotion.framework */; };
 		5FB491E81FD55641006FA910 /* DeviceMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB491E71FD55641006FA910 /* DeviceMotion.m */; };
@@ -60,8 +60,8 @@
 		5F1C1D591FCDB62900681BB2 /* SetLevelGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetLevelGameViewController.m; sourceTree = "<group>"; };
 		5F1C1D5B1FCDB91B00681BB2 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		5F1C1D5C1FCDB91B00681BB2 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		5F8754441FD83ECE0056F63D /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
-		5F8754451FD83ECE0056F63D /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		5F6641C91FD84B7200211294 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		5F6641CA1FD84B7200211294 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		5FA88C3F1FC1DD060004D272 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
 		5FA88C411FC1DD1F0004D272 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		5FB491E61FD55641006FA910 /* DeviceMotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceMotion.h; sourceTree = "<group>"; };
@@ -150,10 +150,10 @@
 				5F1C1D4B1FCAF7A700681BB2 /* Levels.m */,
 				5F1C1D4D1FCAF8C500681BB2 /* preSetLevels.h */,
 				5F1C1D4E1FCAF8C500681BB2 /* preSetLevels.m */,
+				5F6641C91FD84B7200211294 /* CustomTableViewCell.h */,
+				5F6641CA1FD84B7200211294 /* CustomTableViewCell.m */,
 				5F1C1D521FCAFD2200681BB2 /* TableViewController.h */,
 				5F1C1D531FCAFD2200681BB2 /* TableViewController.m */,
-				5F8754441FD83ECE0056F63D /* TableViewCell.h */,
-				5F8754451FD83ECE0056F63D /* TableViewCell.m */,
 				5F1C1D581FCDB62900681BB2 /* SetLevelGameViewController.h */,
 				5F1C1D591FCDB62900681BB2 /* SetLevelGameViewController.m */,
 				5F1C1D5B1FCDB91B00681BB2 /* GameScene.h */,
@@ -335,12 +335,12 @@
 				5F1C1D4C1FCAF7A700681BB2 /* Levels.m in Sources */,
 				5F1C1D5A1FCDB62900681BB2 /* SetLevelGameViewController.m in Sources */,
 				5F1C1D541FCAFD2200681BB2 /* TableViewController.m in Sources */,
-				5F8754461FD83ECE0056F63D /* TableViewCell.m in Sources */,
 				CE8212D11FBB36E800AED4EE /* AppDelegate.m in Sources */,
 				5FB491E81FD55641006FA910 /* DeviceMotion.m in Sources */,
 				CE8212CE1FBB36E800AED4EE /* main.m in Sources */,
 				5F1C1D571FCDA9E100681BB2 /* MazeArrays.m in Sources */,
 				5F1C1D5D1FCDB91B00681BB2 /* GameScene.m in Sources */,
+				5F6641CB1FD84B7200211294 /* CustomTableViewCell.m in Sources */,
 				5F1C1D4F1FCAF8C500681BB2 /* preSetLevels.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

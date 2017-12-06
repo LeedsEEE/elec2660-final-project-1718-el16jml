@@ -57,23 +57,26 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Level" forIndexPath:indexPath];
+    CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Level" forIndexPath:indexPath];
     
     //  each section contains the same number of levels that there are of that difficulty e.g. if there are two easy levels, the easy section will contain three rows.
     if (indexPath.section == 0){
         Levels *tempLevel = [self.levels.easyLevels objectAtIndex:indexPath.row];
-        cell.textLabel.text = tempLevel.level;
-        cell.detailTextLabel.text = tempLevel.difficulty;
+        cell.levelLabel.text = tempLevel.level;
+        cell.difficultyLabel.text = tempLevel.difficulty;
+        cell.levelImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", tempLevel.level]];
     }
     else if (indexPath.section == 1){
         Levels *tempLevel = [self.levels.mediumLevels objectAtIndex:indexPath.row];
-        cell.textLabel.text = tempLevel.level;
-        cell.detailTextLabel.text = tempLevel.difficulty;
+        cell.levelLabel.text = tempLevel.level;
+        cell.difficultyLabel.text = tempLevel.difficulty;
+        cell.levelImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", tempLevel.level]];
     }
     else if (indexPath.section == 2){
         Levels *tempLevel = [self.levels.hardLevels objectAtIndex:indexPath.row];
-        cell.textLabel.text = tempLevel.level;
-        cell.detailTextLabel.text = tempLevel.difficulty;
+        cell.levelLabel.text = tempLevel.level;
+        cell.difficultyLabel.text = tempLevel.difficulty;
+        cell.levelImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", tempLevel.level]];
     }
     return cell;
 }
