@@ -16,5 +16,12 @@
 @property (strong,nonatomic) NSMutableArray *mediumLevels;
 @property (strong,nonatomic) NSMutableArray *hardLevels;
 @property (strong,nonatomic) NSUserDefaults *userDefaults;
+@property float levelOneBestTime;
+@property float levelTwoBestTime;
+@property float levelThreeBestTime;
+@property float levelFourBestTime;
+@property float levelFiveBestTime;
+@property float levelSixBestTime;
+
 
 @end

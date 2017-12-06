@@ -34,18 +34,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYf-7Y-Xs8">
-                                            <rect key="frame" x="16" y="9" width="75" height="75"/>
+                                            <rect key="frame" x="16" y="14" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FZ-VE-Fye">
-                                            <rect key="frame" x="110" y="11" width="249" height="36"/>
+                                            <rect key="frame" x="94" y="14" width="249" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Difficulty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycZ-Br-vtL">
-                                            <rect key="frame" x="110" y="53" width="249" height="26"/>
+                                            <rect key="frame" x="94" y="46" width="249" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="13"/>
                                             <color key="textColor" red="0.10588235410000001" green="0.6784313917" blue="0.97254902119999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,7 +74,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vhs-KK-0Ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1517.5999999999999" y="-439.43028485757122"/>
+            <point key="canvasLocation" x="1192.8" y="-439.43028485757122"/>
         </scene>
         <!--Level Select-->
         <scene sceneID="aBS-WS-hrk">
@@ -97,7 +97,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Be9-Rh-NR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-439"/>
+            <point key="canvasLocation" x="438" y="-439"/>
         </scene>
         <!--Set Level Game View Controller-->
         <scene sceneID="hRF-fp-Rjh">
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5a-Ay-LPk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2278" y="-439"/>
+            <point key="canvasLocation" x="1986" y="-439"/>
         </scene>
     </scenes>
     <resources>

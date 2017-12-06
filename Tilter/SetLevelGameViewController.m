@@ -16,6 +16,7 @@
 @implementation SetLevelGameViewController
 
 Levels *currentLevel;
+
 //  get the maze for the selected level from the view controller
 NSMutableArray* GetCurrentMaze(){
     return currentLevel.Maze;
@@ -27,7 +28,7 @@ NSInteger GetCurrentMazeSize(){
 }
 
 // Get the name of the selected level from teh view controller
-NSString* GetCurrentLevel(){
+NSString* GetCurrentLevelName(){
     return currentLevel.level;
 }
 

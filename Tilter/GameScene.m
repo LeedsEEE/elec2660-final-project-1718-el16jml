@@ -28,6 +28,21 @@
 
 - (void)didMoveToView:(SKView *)view {
 
+#pragma mark GET PROPERTIES
+    
+    //  get the maze
+    self.maze = GetCurrentMaze();
+
+    //  get the maze size
+    self.mazeSize = GetCurrentMazeSize();
+    NSLog(@"Maze size set as: %d", self.mazeSize);
+    
+    //  Set the cell size
+    self.cellSize = 640.0/self.mazeSize;
+    NSLog(@"Cell size set as: %ld", (long)self.cellSize);
+    
+#pragma mark LABELS
+    
     // get the labels
     levelTitleLabel = (SKLabelNode *)[self childNodeWithName:@"levelLabel"];
     levelDifficultyLabel = (SKLabelNode *)[self childNodeWithName:@"difficultyLabel"];
@@ -36,36 +51,23 @@
     timeLabel = (SKLabelNode *)[self childNodeWithName:@"TimeLabel"];
     bestTimeLabel = (SKLabelNode *)[self childNodeWithName:@"BestTimeLabel"];
     
-
-    //  Hide the finished level label
-    wellDoneLabel.hidden = YES;
-    levelCompleteLabel.hidden = YES;
-    
-    //  get the maze
-    self.maze = GetCurrentMaze();
-
-    //  get the maze size
-    self.mazeSize = GetCurrentMazeSize();
-    
-    NSLog(@"Maze size set as: %d", self.mazeSize);
-    
     //  set the labels
-    levelTitleLabel.text = GetCurrentLevel();
+    levelTitleLabel.text = GetCurrentLevelName();
     levelDifficultyLabel.text = GetCurrentDifficulty();
     bestTimeLabel.text = GetBestTime();
     
+    //  Hide the finished level labels
+    wellDoneLabel.hidden = YES;
+    levelCompleteLabel.hidden = YES;
     
-    //  Set the cell size
-    self.cellSize = 640.0/self.mazeSize;
+#pragma mark NODES
     
-    NSLog(@"Cell size set as: %ld", (long)self.cellSize);
-    
-    //  initialise node and set its properties
+    //  initialise Maze node and set its properties
     node = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(self.cellSize, self.cellSize)];
     node.strokeColor = [UIColor blackColor];
     node.fillColor = [UIColor blackColor];
     
-    //  set the Physics for the nodes
+    //  set the Physics for the maze nodes
     nodePhysics = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(self.cellSize, self.cellSize)];
     //node does not move
     [nodePhysics setDynamic:NO];
@@ -75,24 +77,6 @@
     node.physicsBody = nodePhysics;
     
     NSLog(@"Node size, line colour, fill colour and physics set");
-    
-    //  cycle through the matrix indicies and create a node at the corresponding position if there is a one at that index
-    for (int x = 0; x < self.mazeSize; x++){
-        //  NSLog(@"Change of X coordinate");
-        for (int y = 0; y < self.mazeSize; y++){
-            //  NSLog(@"Change of Y coordinate");
-            //  NSLog(@"Current node: x: %i y: %i", x, y);
-            if ([self.maze[x][y]  isEqual: @0]){
-                //NSLog(@"If statement passed");
-                SKShapeNode *currentNode = [node copy];
-                currentNode.position = CGPointMake(((x * self.cellSize) + (0.5 * self.cellSize) - 320), ((y * self.cellSize) + (0.5 * self.cellSize) - 320));
-                [self addChild:currentNode];
-                //NSLog(@"Node added");
-                
-            }
-        }
-    }
-    NSLog(@"For loop Completed");
     
     //  create a player node
     player = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(self.cellSize, self.cellSize)];
@@ -112,9 +96,13 @@
     //  assign physics to the player
     player.physicsBody = playerPhysics;
     
+    //  set the player position
     CGFloat currentPlayerXPosition = (CGFloat) ((0 * self.cellSize) + (0.5 * self.cellSize) - 320);
     CGFloat currentPlayerYPosition = (CGFloat) (((self.mazeSize - 1) * self.cellSize) + (0.5 * self.cellSize) - 320);
     player.position = CGPointMake(currentPlayerXPosition, currentPlayerYPosition);
+    
+    //  add the player to the scene
+    [self addChild:player];
     NSLog(@"Player Created");
     
     //  create node to mark the start
@@ -133,8 +121,28 @@
     [self addChild:end];
     NSLog(@"End node created");
     
-    [self addChild:player];
+#pragma mark CREATE MAZE
     
+    //  cycle through the matrix indicies and create a node at the corresponding position if there is a one at that index
+    for (int x = 0; x < self.mazeSize; x++){
+        //  NSLog(@"Change of X coordinate");
+        for (int y = 0; y < self.mazeSize; y++){
+            //  NSLog(@"Change of Y coordinate");
+            //  NSLog(@"Current node: x: %i y: %i", x, y);
+            if ([self.maze[x][y]  isEqual: @0]){
+                //NSLog(@"If statement passed");
+                SKShapeNode *currentNode = [node copy];
+                currentNode.position = CGPointMake(((x * self.cellSize) + (0.5 * self.cellSize) - 320), ((y * self.cellSize) + (0.5 * self.cellSize) - 320));
+                [self addChild:currentNode];
+                //NSLog(@"Node added");
+                
+            }
+        }
+    }
+    NSLog(@"For loop Completed");
+    
+    
+#pragma mark GYRO DATA INITIALISATION
     //  initialise gyroData object
     _gyroData = [[DeviceMotion alloc] init];
     
@@ -146,6 +154,8 @@
     
     timeLabel.text = [NSString stringWithFormat:@"Time = 0.00"];
 }
+
+#pragma mark EVERY FRAME
 
 //  Executed every frame:
 -(void)didFinishUpdate{
@@ -161,24 +171,21 @@
     int endX = (int)end.position.x;
     int endY = (int)end.position.y;
     
+#pragma mark WHEN LEVEL ENDS
+    
     //  whent he player reaches the end, show the two labels to say its complete
     if (player.position.x > (endX - (self.cellSize / 2)) && player.position.x < (endX + (self.cellSize / 2))){
         if (player.position.y > (endY - (self.cellSize / 2)) && player.position.y < (endY + (self.cellSize / 2))){
-            [_gyroData stopMotionUpdates];
-            [self.levelTimer invalidate];
             wellDoneLabel.hidden = NO;
             levelCompleteLabel.hidden = NO;
             
-            if (_currentLevel.bestTime == 0){
-                _currentLevel.bestTime = _timefloat;
-                //[self.setLevels.userDefaults setFloat:_timefloat forKey:[NSString stringWithFormat:@"%@ Best Time", self.currentLevel.level]];
+            if (_currentLevel.bestTime == 0.0 || _timefloat < _currentLevel.bestTime){
+                self.setLevels.levelOneBestTime = _timefloat;
                 NSLog(@"Best Time %f", self.currentLevel.bestTime);
             }
-            else if (_timefloat < _currentLevel.bestTime){
-                _currentLevel.bestTime = _timefloat;
-                //[self.setLevels.userDefaults setFloat:_timefloat forKey:[NSString stringWithFormat:@"%@ Best Time", self.currentLevel.level]];
-                NSLog(@"Best Time %f", self.currentLevel.bestTime);
-            }
+            //  clean up
+            [self.levelTimer invalidate];
+            [_gyroData stopMotionUpdates];
         }
     }
 }

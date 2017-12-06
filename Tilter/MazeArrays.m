@@ -245,6 +245,94 @@
         
         self.LevelFour = [NSArray arrayWithObjects:self.LevelFourColumnOne, self.LevelFourColumnTwo, self.LevelFourColumnThree, self.LevelFourColumnFour, self.LevelFourColumnFive, self.LevelFourColumnSix, self.LevelFourColumnSeven, self.LevelFourColumnEight, self.LevelFourColumnNine, self.LevelFourColumnTen, self.LevelFourColumnEleven, self.LevelFourColumnTwelve, self.LevelFourColumnThirteen, self.LevelFourColumnFourteen, self.LevelFourColumnFifteen, self.LevelFourColumnSixteen, self.LevelFourColumnSeventeen, self.LevelFourColumnEighteen, self.LevelFourColumnNineteen, self.LevelFourColumnTwenty, self.LevelFourColumnTwentyOne, self.LevelFourColumnTwentyTwo, self.LevelFourColumnTwentyThree, self.LevelFourColumnTwentyFour, self.LevelFourColumnTwentyFive, self.LevelFourColumnTwentySix, self.LevelFourColumnTwentySeven, self.LevelFourColumnTwentyEight, self.LevelFourColumnTwentyNine, nil];
         
+#pragma mark Level Five
+        
+        self.LevelFiveColumnOne =        [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,nil];
+        self.LevelFiveColumnTwo =        [NSArray arrayWithObjects:@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelFiveColumnThree =      [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,nil];
+        self.LevelFiveColumnFour =       [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelFiveColumnFive =       [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,nil];
+        self.LevelFiveColumnSix =        [NSArray arrayWithObjects:@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,nil];
+        self.LevelFiveColumnSeven =      [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@1,@1,@1,@1,nil];
+        self.LevelFiveColumnEight =      [NSArray arrayWithObjects:@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,nil];
+        self.LevelFiveColumnNine =       [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelFiveColumnTen =        [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelFiveColumnEleven =     [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,nil];
+        self.LevelFiveColumnTwelve =     [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,nil];
+        self.LevelFiveColumnThirteen =    [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,nil];
+        self.LevelFiveColumnFourteen =    [NSArray arrayWithObjects:@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,nil];
+        self.LevelFiveColumnFifteen =    [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelFiveColumnSixteen =    [NSArray arrayWithObjects:@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelFiveColumnSeventeen =    [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,nil];
+        self.LevelFiveColumnEighteen =    [NSArray arrayWithObjects:@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelFiveColumnNineteen =    [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelFiveColumnTwenty =    [NSArray arrayWithObjects:@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,nil];
+        self.LevelFiveColumnTwentyOne =    [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,nil];
+        self.LevelFiveColumnTwentyTwo =    [NSArray arrayWithObjects:@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelFiveColumnTwentyThree =    [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,nil];
+        self.LevelFiveColumnTwentyFive =    [NSArray arrayWithObjects:@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,nil];
+        self.LevelFiveColumnTwentyFive =    [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelFiveColumnTwentySix =    [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelFiveColumnTwentySeven =    [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,nil];
+        self.LevelFiveColumnTwentyEight =    [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelFiveColumnTwentyNine =    [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelFiveColumnThirty =    [NSArray arrayWithObjects:@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,nil];
+        self.LevelFiveColumnThirtyOne =    [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelFiveColumnThirtyTwo =    [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelFiveColumnThirtyThree =    [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelFiveColumnThirtyFive =    [NSArray arrayWithObjects:@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelFiveColumnThirtyFive =    [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,nil];
+        self.LevelFiveColumnThirtySix =    [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelFiveColumnThirtySeven =    [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelFiveColumnThirtyEight =    [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,nil];
+        self.LevelFiveColumnThirtyNine =    [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,nil];
+        
+        self.LevelFive = [NSArray arrayWithObjects:self.LevelFiveColumnOne, self.LevelFiveColumnTwo, self.LevelFiveColumnThree, self.LevelFiveColumnFour, self.LevelFiveColumnFive, self.LevelFiveColumnSix, self.LevelFiveColumnSeven, self.LevelFiveColumnEight, self.LevelFiveColumnNine, self.LevelFiveColumnTen, self.LevelFiveColumnEleven, self.LevelFiveColumnTwelve, self.LevelFiveColumnThirteen, self.LevelFiveColumnFourteen, self.LevelFiveColumnFifteen, self.LevelFiveColumnSixteen, self.LevelFiveColumnSeventeen, self.LevelFiveColumnEighteen, self.LevelFiveColumnNineteen, self.LevelFiveColumnTwenty, self.LevelFiveColumnTwentyOne, self.LevelFiveColumnTwentyTwo, self.LevelFiveColumnTwentyThree, self.LevelFiveColumnTwentyFour, self.LevelFiveColumnTwentyFive, self.LevelFiveColumnTwentySix, self.LevelFiveColumnTwentySeven, self.LevelFiveColumnTwentyEight, self.LevelFiveColumnTwentyNine, self.LevelFiveColumnThirty, self.LevelFiveColumnThirtyOne, self.LevelFiveColumnThirtyTwo, self.LevelFiveColumnThirtyThree, self.LevelFiveColumnThirtyFour, self.LevelFiveColumnThirtyFive, self.LevelFiveColumnThirtySix, self.LevelFiveColumnThirtySeven, self.LevelFiveColumnThirtyEight, self.LevelFiveColumnThirtyNine, nil];
+        
+#pragma mark Level Six
+
+        self.LevelSixColumnOne =        [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,nil];
+        self.LevelSixColumnTwo =        [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelSixColumnThree =      [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,nil];
+        self.LevelSixColumnFour =       [NSArray arrayWithObjects:@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,nil];
+        self.LevelSixColumnFive =       [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,nil];
+        self.LevelSixColumnSix =        [NSArray arrayWithObjects:@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,nil];
+        self.LevelSixColumnSeven =      [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,nil];
+        self.LevelSixColumnEight =      [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelSixColumnNine =       [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,nil];
+        self.LevelSixColumnTen =        [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelSixColumnEleven =     [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,nil];
+        self.LevelSixColumnTwelve =     [NSArray arrayWithObjects:@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelSixColumnThirteen =    [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,nil];
+        self.LevelSixColumnFourteen =    [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,nil];
+        self.LevelSixColumnFifteen =    [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,nil];
+        self.LevelSixColumnSixteen =    [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,nil];
+        self.LevelSixColumnSeventeen =    [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,nil];
+        self.LevelSixColumnEighteen =    [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelSixColumnNineteen =    [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,nil];
+        self.LevelSixColumnTwenty =    [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelSixColumnTwentyOne =    [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelSixColumnTwentyTwo =    [NSArray arrayWithObjects:@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelSixColumnTwentyThree =    [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,nil];
+        self.LevelSixColumnTwentyFour =    [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,nil];
+        self.LevelSixColumnTwentyFive =    [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,nil];
+        self.LevelSixColumnTwentySix =    [NSArray arrayWithObjects:@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelSixColumnTwentySeven =    [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@0,@1,    @1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,nil];
+        self.LevelSixColumnTwentyEight =    [NSArray arrayWithObjects:@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelSixColumnTwentyNine =    [NSArray arrayWithObjects:@0,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelSixColumnThirty =    [NSArray arrayWithObjects:@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,nil];
+        self.LevelSixColumnThirtyOne =    [NSArray arrayWithObjects:@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,nil];
+        self.LevelSixColumnThirtyTwo =    [NSArray arrayWithObjects:@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@0,@0,@1,nil];
+        self.LevelSixColumnThirtyThree =    [NSArray arrayWithObjects:@1,@1,@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,nil];
+        self.LevelSixColumnThirtyFour =    [NSArray arrayWithObjects:@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,nil];
+        self.LevelSixColumnThirtyFive =    [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,nil];
+        self.LevelSixColumnThirtySix =    [NSArray arrayWithObjects:@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@0,@0,@0,@0,@1,nil];
+        self.LevelSixColumnThirtySeven =    [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@0,@1,@1,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,@0,@1,@0,@1,@0,@1,@1,@1,nil];
+        self.LevelSixColumnThirtyEight =    [NSArray arrayWithObjects:@1,@0,@0,@0,@1,@0,@1,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@0,@0,@1,@0,@0,@0,@0,@0,@1,@0,@1,@0,@1,@0,@1,@0,@1,@0,@0,nil];
+        self.LevelSixColumnThirtyNine =    [NSArray arrayWithObjects:@1,@1,@1,@0,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@1,@0,@1,@0,@1,@1,@1,@0,@1,@1,@1,nil];
+        
+        self.LevelSix = [NSArray arrayWithObjects:self.LevelSixColumnOne, self.LevelSixColumnTwo, self.LevelSixColumnThree, self.LevelSixColumnFour, self.LevelSixColumnFive, self.LevelSixColumnSix, self.LevelSixColumnSeven, self.LevelSixColumnEight, self.LevelSixColumnNine, self.LevelSixColumnTen, self.LevelSixColumnEleven, self.LevelSixColumnTwelve, self.LevelSixColumnThirteen, self.LevelSixColumnFourteen, self.LevelSixColumnFifteen, self.LevelSixColumnSixteen, self.LevelSixColumnSeventeen, self.LevelSixColumnEighteen, self.LevelSixColumnNineteen, self.LevelSixColumnTwenty, self.LevelSixColumnTwentyOne, self.LevelSixColumnTwentyTwo, self.LevelSixColumnTwentyThree, self.LevelSixColumnTwentyFour, self.LevelSixColumnTwentyFive, self.LevelSixColumnTwentySix, self.LevelSixColumnTwentySeven, self.LevelSixColumnTwentyEight, self.LevelSixColumnTwentyNine, self.LevelSixColumnThirty, self.LevelSixColumnThirtyOne, self.LevelSixColumnThirtyTwo, self.LevelSixColumnThirtyThree, self.LevelSixColumnThirtyFour, self.LevelSixColumnThirtyFive, self.LevelSixColumnThirtySix, self.LevelSixColumnThirtySeven, self.LevelSixColumnThirtyEight, self.LevelSixColumnThirtyNine, nil];
+
     }
     return self;
 }

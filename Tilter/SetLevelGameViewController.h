@@ -18,9 +18,10 @@
 @property (nonatomic, strong) Levels* currentLevel;
 @property (nonatomic, strong) SKView* skView;
 
+Levels* GetCurrentLevelObject();
 NSMutableArray* GetCurrentMaze();
 NSInteger GetCurrentMazeSize();
-NSString* GetCurrentLevel();
+NSString* GetCurrentLevelName();
 NSString* GetCurrentDifficulty();
 NSString* GetBestTime();
 

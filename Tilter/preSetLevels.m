@@ -19,12 +19,12 @@
         MazeArrays *setLevels = [[MazeArrays alloc] init];
         
         self.easyLevels = [NSMutableArray array];
-        
         Levels *levelOne = [[Levels alloc] init];
         levelOne.level = @"Level One";
         levelOne.difficulty = @"Easy";
         levelOne.size = 19;
         levelOne.Maze = [NSMutableArray arrayWithArray:setLevels.LevelOne];
+        levelOne.bestTime = self.levelOneBestTime;
         
         
         Levels *levelTwo = [[Levels alloc] init];
@@ -32,7 +32,7 @@
         levelTwo.difficulty = @"Easy";
         levelTwo.size = 19;
         levelTwo.Maze = [NSMutableArray arrayWithArray:setLevels.LevelTwo];
-        levelTwo.bestTime = [_userDefaults floatForKey:@"Level Two Best Time"];
+        levelTwo.bestTime = self.levelTwoBestTime;
         
         [self.easyLevels addObject:levelOne];
         [self.easyLevels addObject:levelTwo];
@@ -45,15 +45,14 @@
         levelThree.difficulty = @"Medium";
         levelThree.size = 29;
         levelThree.Maze = [NSMutableArray arrayWithArray:setLevels.LevelThree];
-        levelThree.bestTime = [_userDefaults floatForKey:@"Level Three Best Time"];
+        levelThree.bestTime = self.levelThreeBestTime;
         
-        self.mediumLevels = [NSMutableArray array];
         Levels *levelFour = [[Levels alloc] init];
         levelFour.level = @"Level Four";
         levelFour.difficulty = @"Medium";
         levelFour.size = 29;
         levelFour.Maze = [NSMutableArray arrayWithArray:setLevels.LevelFour];
-        levelFour.bestTime = [_userDefaults floatForKey:@"Level Four Best Time"];
+        levelFour.bestTime = self.levelFourBestTime;
         
         [self.mediumLevels addObject:levelThree];
         [self.mediumLevels addObject:levelFour];
@@ -65,20 +64,21 @@
         levelFive.level = @"Level Five";
         levelFive.difficulty = @"Hard";
         levelFive.size = 39;
-        levelFive.bestTime = [_userDefaults floatForKey:@"Level Five Best Time"];
+        levelFive.bestTime = self.levelFiveBestTime;
+        levelFive.Maze = [NSMutableArray arrayWithArray:setLevels.LevelFive];
         
-        self.hardLevels = [NSMutableArray array];
         Levels *levelSix = [[Levels alloc] init];
         levelSix.level = @"Level Six";
         levelSix.difficulty = @"Hard";
         levelSix.size = 39;
-        levelSix.bestTime = [_userDefaults floatForKey:@"Level Six Best Time"];
+        levelSix.bestTime = self.levelSixBestTime;
+        levelSix.Maze = [NSMutableArray arrayWithArray:setLevels.LevelSix];
         
         [self.hardLevels addObject:levelFive];
         [self.hardLevels addObject:levelSix];
         
         NSLog(@"Hard levels created and added to array");
-        
+    
     }
     return self;
 }
