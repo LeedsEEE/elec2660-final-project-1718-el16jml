@@ -11,12 +11,13 @@
 #import "preSetLevels.h"
 #import "SetLevelGameViewController.h"
 #import "GameScene.h"
+#import "BestTimes.h"
 
 @interface TableViewController : UITableViewController
 
 @property (nonatomic, strong) preSetLevels *levels;
 @property (nonatomic, strong) NSArray* maze;
 @property int mazeSize;
-
+@property (nonatomic, strong) BestTimes* bestTimes;
 
 @end

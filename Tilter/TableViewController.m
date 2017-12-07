@@ -18,12 +18,22 @@
     [super viewDidLoad];
     
     self.levels = [[preSetLevels alloc]init];
+    self.bestTimes = [[BestTimes alloc]init];
+    
+    [_bestTimes initialiseDefaults];
     
     // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.clearsSelectionOnViewWillAppear = YES;
+    
+    [self.tableView reloadData];
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,18 +75,21 @@
         cell.levelLabel.text = tempLevel.level;
         cell.difficultyLabel.text = tempLevel.difficulty;
         cell.levelImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", tempLevel.level]];
+        cell.timeLabel.text = [NSString stringWithFormat:@"Best Time = %.2f", [self.bestTimes.userDefaults floatForKey:[NSString stringWithFormat:@"%@", tempLevel.level]]];
     }
     else if (indexPath.section == 1){
         Levels *tempLevel = [self.levels.mediumLevels objectAtIndex:indexPath.row];
         cell.levelLabel.text = tempLevel.level;
         cell.difficultyLabel.text = tempLevel.difficulty;
         cell.levelImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", tempLevel.level]];
+        cell.timeLabel.text = [NSString stringWithFormat:@"Best Time = %.2f", [self.bestTimes.userDefaults floatForKey:[NSString stringWithFormat:@"%@", tempLevel.level]]];
     }
     else if (indexPath.section == 2){
         Levels *tempLevel = [self.levels.hardLevels objectAtIndex:indexPath.row];
         cell.levelLabel.text = tempLevel.level;
         cell.difficultyLabel.text = tempLevel.difficulty;
         cell.levelImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", tempLevel.level]];
+        cell.timeLabel.text = [NSString stringWithFormat:@"Best Time = %.2f", [self.bestTimes.userDefaults floatForKey:[NSString stringWithFormat:@"%@", tempLevel.level]]];
     }
     return cell;
 }

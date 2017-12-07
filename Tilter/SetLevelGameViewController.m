@@ -37,11 +37,6 @@ NSString* GetCurrentDifficulty(){
     return currentLevel.difficulty;
 }
 
-NSString* GetBestTime(){
-    return [NSString stringWithFormat:@"Best time = %.2f", currentLevel.bestTime];
-}
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     //  Do any additional setup after loading the view.

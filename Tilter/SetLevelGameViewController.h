@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
-#import <GameplayKit/GameplayKit.h>
 #import <Foundation/Foundation.h>
 #import "Levels.h"
 #import "GameScene.h"
@@ -23,7 +22,6 @@ NSMutableArray* GetCurrentMaze();
 NSInteger GetCurrentMazeSize();
 NSString* GetCurrentLevelName();
 NSString* GetCurrentDifficulty();
-NSString* GetBestTime();
 
 
 @end

@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *levelImage;
 @property (strong, nonatomic) IBOutlet UILabel *levelLabel;
 @property (strong, nonatomic) IBOutlet UILabel *difficultyLabel;
+@property (strong, nonatomic) IBOutlet UILabel *timeLabel;
 
 
 @end

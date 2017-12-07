@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,22 +39,45 @@
                                             <rect key="frame" x="16" y="14" width="65" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FZ-VE-Fye">
-                                            <rect key="frame" x="94" y="14" width="249" height="36"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Difficulty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycZ-Br-vtL">
-                                            <rect key="frame" x="94" y="46" width="249" height="26"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycZ-Br-vtL">
+                                            <rect key="frame" x="94" y="46" width="133" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="133" id="wFx-od-VM0"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="13"/>
                                             <color key="textColor" red="0.10588235410000001" green="0.6784313917" blue="0.97254902119999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5I-tA-b7e">
+                                            <rect key="frame" x="235" y="46" width="124" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="124" id="bTp-DE-RBe"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="13"/>
+                                            <color key="textColor" red="0.10588235410000001" green="0.6784313917" blue="0.97254902119999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FZ-VE-Fye">
+                                            <rect key="frame" x="94" y="14" width="249" height="36"/>
+                                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="9FZ-VE-Fye" firstAttribute="top" secondItem="Yor-gJ-cNd" secondAttribute="topMargin" constant="3" id="2aK-3N-eLq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="9FZ-VE-Fye" secondAttribute="bottom" constant="32" id="79U-gU-39S"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="V5I-tA-b7e" secondAttribute="bottom" constant="10" id="Bqu-X5-XZQ"/>
+                                        <constraint firstItem="V5I-tA-b7e" firstAttribute="baseline" secondItem="ycZ-Br-vtL" secondAttribute="baseline" id="HDw-lT-eEv"/>
+                                        <constraint firstItem="ycZ-Br-vtL" firstAttribute="leading" secondItem="9FZ-VE-Fye" secondAttribute="leading" id="OiX-Ps-EfV"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="9FZ-VE-Fye" secondAttribute="trailing" constant="16" id="PlP-H6-AaB"/>
+                                        <constraint firstItem="V5I-tA-b7e" firstAttribute="top" secondItem="Yor-gJ-cNd" secondAttribute="topMargin" constant="35" id="Xq2-vh-6ia"/>
+                                        <constraint firstItem="V5I-tA-b7e" firstAttribute="trailing" secondItem="Yor-gJ-cNd" secondAttribute="trailingMargin" id="obE-au-YaR"/>
+                                        <constraint firstItem="V5I-tA-b7e" firstAttribute="leading" secondItem="ycZ-Br-vtL" secondAttribute="trailing" constant="8" symbolic="YES" id="t4T-Cp-MQ9"/>
+                                        <constraint firstItem="V5I-tA-b7e" firstAttribute="firstBaseline" secondItem="ycZ-Br-vtL" secondAttribute="firstBaseline" id="wUZ-Ft-1r2"/>
+                                        <constraint firstItem="9FZ-VE-Fye" firstAttribute="top" secondItem="Yor-gJ-cNd" secondAttribute="topMargin" constant="3" id="zHk-BF-uXk"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -60,6 +85,7 @@
                                     <outlet property="difficultyLabel" destination="ycZ-Br-vtL" id="eOO-RM-VfZ"/>
                                     <outlet property="levelImage" destination="aYf-7Y-Xs8" id="SIe-NV-I6h"/>
                                     <outlet property="levelLabel" destination="9FZ-VE-Fye" id="mqA-6v-elO"/>
+                                    <outlet property="timeLabel" destination="V5I-tA-b7e" id="oda-H0-ObC"/>
                                     <segue destination="utE-xv-8p7" kind="show" identifier="showLevel" id="jfY-yO-jDV"/>
                                 </connections>
                             </tableViewCell>

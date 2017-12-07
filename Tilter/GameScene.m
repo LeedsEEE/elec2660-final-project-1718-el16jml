@@ -28,6 +28,11 @@
 
 - (void)didMoveToView:(SKView *)view {
 
+    _bestTimes = [[BestTimes alloc] init];
+    self.ended = NO;
+    
+    [_bestTimes initialiseDefaults];
+    
 #pragma mark GET PROPERTIES
     
     //  get the maze
@@ -54,7 +59,7 @@
     //  set the labels
     levelTitleLabel.text = GetCurrentLevelName();
     levelDifficultyLabel.text = GetCurrentDifficulty();
-    bestTimeLabel.text = GetBestTime();
+    bestTimeLabel.text = [NSString stringWithFormat:@"Best Time = %.2f",[self.bestTimes.userDefaults floatForKey:GetCurrentLevelName()] ];
     
     //  Hide the finished level labels
     wellDoneLabel.hidden = YES;
@@ -77,6 +82,22 @@
     node.physicsBody = nodePhysics;
     
     NSLog(@"Node size, line colour, fill colour and physics set");
+    
+    //  create node to mark the start
+    start = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(self.cellSize, self.cellSize)];
+    start.strokeColor = [UIColor greenColor];
+    start.fillColor = [UIColor greenColor];
+    start.position = CGPointMake(((0 * self.cellSize) + (0.5 * self.cellSize) - 320), (((self.mazeSize - 1) * self.cellSize) + (0.5 * self.cellSize) - 320));
+    [self addChild:start];
+    NSLog(@"Start node created");
+    
+    //  create node to mark the end
+    end = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(self.cellSize, self.cellSize)];
+    end.strokeColor = [UIColor redColor];
+    end.fillColor = [UIColor redColor];
+    end.position = CGPointMake((((self.mazeSize - 1) * self.cellSize) + (0.5 * self.cellSize) - 320), ((0* self.cellSize) + (0.5 * self.cellSize) - 320));
+    [self addChild:end];
+    NSLog(@"End node created");
     
     //  create a player node
     player = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(self.cellSize, self.cellSize)];
@@ -104,22 +125,6 @@
     //  add the player to the scene
     [self addChild:player];
     NSLog(@"Player Created");
-    
-    //  create node to mark the start
-    start = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(self.cellSize, self.cellSize)];
-    start.strokeColor = [UIColor greenColor];
-    start.fillColor = [UIColor greenColor];
-    start.position = CGPointMake(((0 * self.cellSize) + (0.5 * self.cellSize) - 320), (((self.mazeSize - 1) * self.cellSize) + (0.5 * self.cellSize) - 320));
-    [self addChild:start];
-    NSLog(@"Start node created");
-    
-    //  create node to mark the end
-    end = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(self.cellSize, self.cellSize)];
-    end.strokeColor = [UIColor redColor];
-    end.fillColor = [UIColor redColor];
-    end.position = CGPointMake((((self.mazeSize - 1) * self.cellSize) + (0.5 * self.cellSize) - 320), ((0* self.cellSize) + (0.5 * self.cellSize) - 320));
-    [self addChild:end];
-    NSLog(@"End node created");
     
 #pragma mark CREATE MAZE
     
@@ -161,8 +166,11 @@
 -(void)didFinishUpdate{
     CGPoint newPosition = [_gyroData updatePlayerMotionFromCurrentPositionWithCurrentX:player.position.x CurrentY:player.position.y];
     
-    //  update the player position
-    player.position = newPosition;
+    //  update the player position if the lavel is still being played
+    if (self.ended == NO){
+        player.position = newPosition;
+        NSLog(@"Position = %.2f , %.2f", player.position.x, player.position.y);
+    }
     
     //  update the time label
     timeLabel.text = [NSString stringWithFormat:@"Time = %.2f", _timefloat];
@@ -173,21 +181,36 @@
     
 #pragma mark WHEN LEVEL ENDS
     
-    //  whent he player reaches the end, show the two labels to say its complete
+    //  when the player reaches the end, show the two labels to say its complete
     if (player.position.x > (endX - (self.cellSize / 2)) && player.position.x < (endX + (self.cellSize / 2))){
         if (player.position.y > (endY - (self.cellSize / 2)) && player.position.y < (endY + (self.cellSize / 2))){
-            wellDoneLabel.hidden = NO;
-            levelCompleteLabel.hidden = NO;
-            
-            if (_currentLevel.bestTime == 0.0 || _timefloat < _currentLevel.bestTime){
-                self.setLevels.levelOneBestTime = _timefloat;
-                NSLog(@"Best Time %f", self.currentLevel.bestTime);
+            if (self.ended == NO){
+                [self levelDidEnd];
+                self.ended = YES;
+                
             }
-            //  clean up
-            [self.levelTimer invalidate];
-            [_gyroData stopMotionUpdates];
         }
     }
+}
+
+-(void) levelDidEnd{
+    //  show completed level lablels
+    wellDoneLabel.hidden = NO;
+    levelCompleteLabel.hidden = NO;
+    
+    
+    //  update best time if required
+    if ([self.bestTimes.userDefaults floatForKey:GetCurrentLevelName()] == 0.0 || _timefloat < [self.bestTimes.userDefaults floatForKey:GetCurrentLevelName()]){
+        [self.bestTimes setBestTimeForLevel:GetCurrentLevelName() asTime:_timefloat];
+        bestTimeLabel.text = [NSString stringWithFormat:@"Best Time = %.2f",[self.bestTimes getBestTimeForLevel:GetCurrentLevelName()]];
+        NSLog(@"Best Time %f", [self.bestTimes getBestTimeForLevel:GetCurrentLevelName()]);
+        [self.bestTimes.userDefaults setFloat:_timefloat forKey:GetCurrentLevelName()];
+        NSLog(@"Best Time saved as: %f", [self.bestTimes.userDefaults floatForKey:GetCurrentLevelName()]);
+    }
+    //  clean up
+    [self.levelTimer invalidate];
+    [_gyroData stopMotionUpdates];
+    
 }
 
 @end
