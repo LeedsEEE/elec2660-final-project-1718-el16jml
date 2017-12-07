@@ -5,6 +5,9 @@
 //  Created by Julian Lee on 26/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
+//  Manages the table view and how the information is displayed within it. It also prepares and executes the segue to the next
+//  view.
+//  
 
 #import "TableViewController.h"
 

@@ -5,7 +5,9 @@
 //  Created by Julian Lee on 28/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
-//  This file creates the mazes by creating arrays of arrays, they are then sent to "preSetLevels" and assigned to level objects
+//  This class creates the mazes by creating arrays of arrays, they are then sent to "preSetLevels" and assigned to level
+//  objects.
+//
 
 #import "MazeArrays.h"
 

@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "Levels.h"
 #import "MazeArrays.h"
-#import "BestTimes.h"
 
 @interface preSetLevels : NSObject
 

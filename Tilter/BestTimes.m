@@ -5,6 +5,9 @@
 //  Created by Julian Lee on 07/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
+//  This class deals with the updatin of the best time for each level, the NSUserDefaults object holds the data that is to be
+//  permanently stored on the phone and is the main way that these times are updated.
+//
 
 #import "BestTimes.h"
 

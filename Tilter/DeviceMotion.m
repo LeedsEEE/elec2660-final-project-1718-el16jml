@@ -5,6 +5,12 @@
 //  Created by Julian Lee on 04/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
+//  This class deals with the interface between the applicaton and the gyroscope, the attitude of the device represents an
+//  orientation with respect to a given state, rather than returning the rate of rotation.
+//
+//  Inspiration for this file has come from a tutorial avaliable at https://wwwbruegge.in.tum.de/lehrstuhl_1/home/98-teaching/tutorials/505-sgd-ws13-tutorial-core-motion
+//  It is therefore possible that this file will bare some similarity to the example project given on this page.
+//
 
 #import "DeviceMotion.h"
 

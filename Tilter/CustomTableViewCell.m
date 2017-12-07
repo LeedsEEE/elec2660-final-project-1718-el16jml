@@ -5,6 +5,8 @@
 //  Created by Julian Lee on 06/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
+//  This class is used to customise the view of a table view cell.
+//
 
 #import "CustomTableViewCell.h"
 
